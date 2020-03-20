@@ -1,0 +1,35 @@
+/* GENERAL */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem; }
+
+h1 {
+  font-size: 5rem;
+  color: orange;
+  margin: auto; }
+
+header {
+  display: flex;
+  height: 11rem;
+  background-color: #559c84; }
+
+/* PAGE DE SELECTION DES MENUS */
+#selectionMenus {
+  margin: 5rem 5%;
+  display: grid;
+  grid-template-rows: minmax(50rem, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 4rem; }
+
+.item {
+  background-color: orange; }
+
+/*# sourceMappingURL=default.css.map */
