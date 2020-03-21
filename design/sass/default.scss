@@ -17,27 +17,30 @@ body {
 
 h1 {
     font-size: 5rem;
-    color: orange;
+    color: #FDCB46;
     margin: auto;
 }
 
 header {
     display: flex;
     height: 11rem;
-    background-color: #559c84;
+    background-color: #579C87;
 }
 
 
 /* PAGE DE SELECTION DES MENUS */
 
 #selectionMenus {
-    margin: 5rem 5%;
     display: grid;
-    grid-template-rows: minmax(50rem, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-rows: 42rem;
+    grid-auto-rows: 42rem;
+    grid-template-columns: repeat(auto-fit, 30rem);
     grid-gap: 4rem;
+    justify-content: center;
+    margin: 5rem 7rem;
 }
 
-.item {
-    background-color: orange;
+.menuCoverPage {
+    background-color: #f9f7f6;
+    border: 1px solid #000;
 }
