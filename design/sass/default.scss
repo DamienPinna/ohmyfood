@@ -30,6 +30,13 @@ header {
 
 /* PAGE DE SELECTION DES MENUS */
 
+//Couleurs de fond des menus
+$bgColorMenus: (menu01: #FCDFDB, 
+                menu02: #FFF5FE, 
+                menu03: #F9F9F9, 
+                menu04: #FDFFFD);
+
+
 #selectionMenus {
     display: grid;
     grid-template-rows: 42rem;
@@ -38,9 +45,35 @@ header {
     grid-gap: 4rem;
     justify-content: center;
     margin: 5rem 7rem;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+        div {
+            text-align: center;
+        }
 }
 
-.menuCoverPage {
-    background-color: #f9f7f6;
-    border: 1px solid #000;
+#menuCoverPage01 {
+    background-color: map-get($bgColorMenus, menu01);
+    box-shadow: 0.05rem 0.05rem 1rem #d6d6d6;
+}
+
+#menuCoverPage02 {
+    background-color: map-get($bgColorMenus, menu02);
+    box-shadow: 0.05rem 0.05rem 1rem #d6d6d6;
+}
+
+#menuCoverPage03 {
+    background-color: map-get($bgColorMenus, menu03);
+    box-shadow: 0.05rem 0.05rem 1rem #d6d6d6;
+}
+
+#menuCoverPage04 {
+    background-color: map-get($bgColorMenus, menu04);
+    box-shadow: 0.05rem 0.05rem 1rem #d6d6d6;
 }

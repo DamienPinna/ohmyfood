@@ -30,9 +30,28 @@ header {
   grid-gap: 4rem;
   justify-content: center;
   margin: 5rem 7rem; }
+  #selectionMenus a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; }
+  #selectionMenus div {
+    text-align: center; }
 
-.menuCoverPage {
-  background-color: #f9f7f6;
-  border: 1px solid #000; }
+#menuCoverPage01 {
+  background-color: #FCDFDB;
+  box-shadow: 0.05rem 0.05rem 1rem #d6d6d6; }
+
+#menuCoverPage02 {
+  background-color: #FFF5FE;
+  box-shadow: 0.05rem 0.05rem 1rem #d6d6d6; }
+
+#menuCoverPage03 {
+  background-color: #F9F9F9;
+  box-shadow: 0.05rem 0.05rem 1rem #d6d6d6; }
+
+#menuCoverPage04 {
+  background-color: #FDFFFD;
+  box-shadow: 0.05rem 0.05rem 1rem #d6d6d6; }
 
 /*# sourceMappingURL=default.css.map */
