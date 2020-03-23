@@ -1,3 +1,21 @@
+//LISTS
+
+//Couleurs de fond des menus
+$bgColorMenus: (menu01: #FCDFDB, 
+                menu02: #FFF5FE, 
+                menu03: #F9F9F9, 
+                menu04: #FDFFFD);
+
+//VARIABLES
+
+//Décorations
+$boxShadow: 0.05rem 0.05rem 1rem #d6d6d6;
+
+//Couleurs
+$primaryColor: #579C87;
+$secondaryColor: #FDCB46;
+
+
 /* GENERAL */
 
 *, *::before, *::after {
@@ -17,25 +35,34 @@ body {
 
 h1 {
     font-size: 5rem;
-    color: #FDCB46;
+    color: $secondaryColor;
     margin: auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
     display: flex;
     height: 11rem;
-    background-color: #579C87;
+    background-color: $primaryColor;
+}
+
+footer {
+    display: flex;
+    height: 6rem;
+    background-color: $primaryColor;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        margin: 0 2rem;
+    }
 }
 
 
 /* PAGE DE SELECTION DES MENUS */
-
-//Couleurs de fond des menus
-$bgColorMenus: (menu01: #FCDFDB, 
-                menu02: #FFF5FE, 
-                menu03: #F9F9F9, 
-                menu04: #FDFFFD);
-
 
 #selectionMenus {
     display: grid;
@@ -50,7 +77,6 @@ $bgColorMenus: (menu01: #FCDFDB,
         display: flex;
         justify-content: center;
         align-items: center;
-        text-decoration: none;
     }
 
         div {
@@ -58,22 +84,24 @@ $bgColorMenus: (menu01: #FCDFDB,
         }
 }
 
-#menuCoverPage01 {
-    background-color: map-get($bgColorMenus, menu01);
-    box-shadow: 0.05rem 0.05rem 1rem #d6d6d6;
+@for $i from 1 through 4 {
+    #menuCoverPage0#{$i} {
+        background-color: map-get($bgColorMenus, menu0#{$i});
+        box-shadow: $boxShadow;
+    }
 }
 
-#menuCoverPage02 {
-    background-color: map-get($bgColorMenus, menu02);
-    box-shadow: 0.05rem 0.05rem 1rem #d6d6d6;
-}
+ #soon {
+     height: 10rem;
 
-#menuCoverPage03 {
-    background-color: map-get($bgColorMenus, menu03);
-    box-shadow: 0.05rem 0.05rem 1rem #d6d6d6;
-}
-
-#menuCoverPage04 {
-    background-color: map-get($bgColorMenus, menu04);
-    box-shadow: 0.05rem 0.05rem 1rem #d6d6d6;
-}
+     div {
+        background-color: $primaryColor;
+        color: $secondaryColor;
+        border-radius: 1rem;
+        font-size: 2.8rem;
+        width: 25rem;
+        padding: 1rem 0;
+        margin: auto;
+        text-align: center;
+     }
+ }
