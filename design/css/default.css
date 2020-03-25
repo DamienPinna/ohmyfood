@@ -6,10 +6,14 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  height: 100%; }
 
 body {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr; }
 
 h1 {
   font-size: 5rem;
@@ -29,11 +33,20 @@ footer {
   height: 6rem;
   background-color: #579C87;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: sticky;
+  bottom: 0; }
   footer a {
-    margin: 0 2rem; }
+    margin: 0 2rem;
+    color: #FDCB46;
+    font-size: 2.4rem; }
 
 /* PAGE DE SELECTION DES MENUS */
+#container {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0; }
+
 #selectionMenus {
   display: grid;
   grid-template-rows: 42rem;
