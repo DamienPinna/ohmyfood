@@ -1,3 +1,19 @@
+//FONTS
+
+@mixin googleFonts($font) {
+    @import url('https://fonts.googleapis.com/css?family=#{$font}&display=swap');
+}
+
+@include googleFonts('Noto Sans JP');
+@include googleFonts('Devonshire');
+@include googleFonts('Baloo Thambi 2');
+@include googleFonts('Lobster Two');
+@include googleFonts('Source Serif Pro');
+@include googleFonts('Dancing Script');
+@include googleFonts('Caveat Brush');
+@include googleFonts('Kaushan Script');
+@include googleFonts('Caveat Brush');
+
 //LISTS
 
 //Couleurs de fond des menus
@@ -5,6 +21,9 @@ $bgColorMenus: (menu01: #FCDFDB,
                 menu02: #FFF5FE, 
                 menu03: #F9F9F9, 
                 menu04: #FDFFFD);
+
+$fontsTitleMenuCoverPage: 'Devonshire', 'Lobster Two', 'Dancing Script', 'Kaushan Script';
+$fontsMenuCoverPage: 'Baloo Thambi 2', 'Source Serif Pro', 'Caveat Brush', 'Caveat Brush';
 
 //VARIABLES
 
@@ -42,6 +61,7 @@ h1 {
     font-size: 5rem;
     color: $secondaryColor;
     margin: auto;
+    font-family: 'Noto Sans JP';
 }
 
 a {
@@ -67,6 +87,7 @@ footer {
         margin: 0 2rem;
         color: $secondaryColor;
         font-size: 2.4rem;
+        font-family: 'Noto Sans JP', sans-serif;
     }
 }
 
@@ -74,8 +95,6 @@ footer {
 /* PAGE DE SELECTION DES MENUS */
 
 #container {
-    display: flex;
-    flex-direction: column;
     margin: auto 0;
  }
 
@@ -99,10 +118,55 @@ footer {
         }
 }
 
-@for $i from 1 through 4 {
-    #menuCoverPage0#{$i} {
-        background-color: map-get($bgColorMenus, menu0#{$i});
-        box-shadow: $boxShadow;
+#menuCoverPage01 {
+    background-color: map-get($bgColorMenus, menu01);
+    box-shadow: $boxShadow;
+
+    h2 {
+        font-family: nth($fontsTitleMenuCoverPage, 1), sans-serif;
+    }
+
+    div div {
+        font-family: nth($fontsMenuCoverPage, 1), sans-serif;
+    }
+}
+
+#menuCoverPage02 {
+    background-color: map-get($bgColorMenus, menu02);
+    box-shadow: $boxShadow;
+
+    h2 {
+        font-family: nth($fontsTitleMenuCoverPage, 2), sans-serif;
+    }
+
+    div div {
+        font-family: nth($fontsMenuCoverPage, 2), sans-serif;
+    }
+}
+
+#menuCoverPage03 {
+    background-color: map-get($bgColorMenus, menu03);
+    box-shadow: $boxShadow;
+
+    h2 {
+        font-family: nth($fontsTitleMenuCoverPage, 3), sans-serif;
+    }
+
+    div div {
+        font-family: nth($fontsMenuCoverPage, 3), sans-serif;
+    }
+}
+
+#menuCoverPage04 {
+    background-color: map-get($bgColorMenus, menu04);
+    box-shadow: $boxShadow;
+
+    h2 {
+        font-family: nth($fontsTitleMenuCoverPage, 4), sans-serif;
+    }
+
+    div div {
+        font-family: nth($fontsMenuCoverPage, 4), sans-serif;
     }
 }
 
@@ -118,5 +182,6 @@ footer {
         padding: 1rem 0;
         margin: auto;
         text-align: center;
+        font-family: 'Noto Sans JP', sans-serif;
      }
  }
