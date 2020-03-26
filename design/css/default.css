@@ -92,7 +92,10 @@ footer {
     font-family: 'Lobster Two', sans-serif;
     margin-bottom: 1.5rem;
     font-weight: lighter;
-    font-size: 2.6rem; }
+    font-size: 2.6rem;
+    background: linear-gradient(to bottom right, #C77412, #905BFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   #menuCoverPage02 div div {
     font-family: 'Source Serif Pro', sans-serif;
     font-size: 3.5rem;
@@ -106,7 +109,10 @@ footer {
     font-family: 'Dancing Script', sans-serif;
     margin-bottom: 1.5rem;
     font-weight: lighter;
-    font-size: 3rem; }
+    font-size: 3rem;
+    background: linear-gradient(to bottom right, #2140DF, #0887FB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   #menuCoverPage03 div div {
     font-family: 'Caveat', sans-serif;
     font-size: 4rem;
@@ -119,7 +125,10 @@ footer {
     font-family: 'Kaushan Script', sans-serif;
     margin-bottom: 1.5rem;
     font-weight: lighter;
-    font-size: 2.6rem; }
+    font-size: 2.6rem;
+    background: linear-gradient(to bottom right, #42973C, #BFFF7E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   #menuCoverPage04 div div {
     font-family: 'Caveat', sans-serif;
     font-size: 4rem;
