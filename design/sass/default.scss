@@ -4,15 +4,18 @@
     @import url('https://fonts.googleapis.com/css?family=#{$font}&display=swap');
 }
 
-@include googleFonts('Noto Sans JP');
-@include googleFonts('Devonshire');
-@include googleFonts('Baloo Thambi 2');
-@include googleFonts('Lobster Two');
-@include googleFonts('Source Serif Pro');
-@include googleFonts('Dancing Script');
-@include googleFonts('Caveat Brush');
-@include googleFonts('Kaushan Script');
-@include googleFonts('Caveat Brush');
+$fontsList: 'Noto Sans JP',
+            'Devonshire',
+            'Baloo Thambi 2',
+            'Lobster Two',
+            'Source Serif Pro',
+            'Dancing Script',
+            'Caveat',
+            'Kaushan Script';
+
+@each $font in $fontsList {
+    @include googleFonts($font);
+}
 
 //LISTS
 
@@ -21,9 +24,6 @@ $bgColorMenus: (menu01: #FCDFDB,
                 menu02: #FFF5FE, 
                 menu03: #F9F9F9, 
                 menu04: #FDFFFD);
-
-$fontsTitleMenuCoverPage: 'Devonshire', 'Lobster Two', 'Dancing Script', 'Kaushan Script';
-$fontsMenuCoverPage: 'Baloo Thambi 2', 'Source Serif Pro', 'Caveat Brush', 'Caveat Brush';
 
 //VARIABLES
 
@@ -58,7 +58,7 @@ body {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: $secondaryColor;
     margin: auto;
     font-family: 'Noto Sans JP';
@@ -123,11 +123,18 @@ footer {
     box-shadow: $boxShadow;
 
     h2 {
-        font-family: nth($fontsTitleMenuCoverPage, 1), sans-serif;
+        font-family: 'Devonshire', sans-serif;
+        margin-bottom: 1.5rem;
+        font-weight: lighter;
+        font-size: 2.6rem;
+        color: #3C1218;
     }
 
     div div {
-        font-family: nth($fontsMenuCoverPage, 1), sans-serif;
+        font-family: 'Baloo Thambi 2', sans-serif;
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #3C1218;
     }
 }
 
@@ -136,11 +143,17 @@ footer {
     box-shadow: $boxShadow;
 
     h2 {
-        font-family: nth($fontsTitleMenuCoverPage, 2), sans-serif;
+        font-family: 'Lobster Two', sans-serif;
+        margin-bottom: 1.5rem;
+        font-weight: lighter;
+        font-size: 2.6rem;
     }
 
     div div {
-        font-family: nth($fontsMenuCoverPage, 2), sans-serif;
+        font-family: 'Source Serif Pro', sans-serif;
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #C77412;
     }
 }
 
@@ -149,11 +162,16 @@ footer {
     box-shadow: $boxShadow;
 
     h2 {
-        font-family: nth($fontsTitleMenuCoverPage, 3), sans-serif;
+        font-family: 'Dancing Script', sans-serif;
+        margin-bottom: 1.5rem;
+        font-weight: lighter;
+        font-size: 3rem;
     }
 
     div div {
-        font-family: nth($fontsMenuCoverPage, 3), sans-serif;
+        font-family: 'Caveat', sans-serif;
+        font-size: 4rem;
+        color: #0887FB;
     }
 }
 
@@ -162,11 +180,16 @@ footer {
     box-shadow: $boxShadow;
 
     h2 {
-        font-family: nth($fontsTitleMenuCoverPage, 4), sans-serif;
+        font-family: 'Kaushan Script', sans-serif;
+        margin-bottom: 1.5rem;
+        font-weight: lighter;
+        font-size: 2.6rem;
     }
 
     div div {
-        font-family: nth($fontsMenuCoverPage, 4), sans-serif;
+        font-family: 'Caveat', sans-serif;
+        font-size: 4rem;
+        color: #72BF56;
     }
 }
 
