@@ -118,6 +118,34 @@ footer {
         }
 }
 
+@media screen and (max-width: 460px) {
+    #selectionMenus {
+        margin: 5rem 1rem;
+    }
+    
+    footer {
+        a {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #selectionMenus {
+        grid-template-columns: 25rem;
+        grid-template-rows: 35rem;
+        grid-auto-rows: 35rem;
+        grid-gap: 2.5rem;
+        margin: 2.5rem 0;
+    }
+
+    footer {
+        a {
+            font-size: 1.5rem;
+        }
+    }
+}
+
 #menuCoverPage01 {
     background-color: map-get($bgColorMenus, menu01);
     box-shadow: $boxShadow;
@@ -192,7 +220,9 @@ footer {
         font-size: 2.6rem;
         background: linear-gradient(to bottom right, #42973C, #BFFF7E);
         -webkit-background-clip: text;
+        -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
     }
 
     div div {
@@ -202,18 +232,35 @@ footer {
     }
 }
 
- #soon {
-     height: 10rem;
+#soon {
+    height: 11rem;
 
-     div {
-        background-color: $primaryColor;
-        color: $secondaryColor;
-        border-radius: 1rem;
-        font-size: 2.8rem;
-        width: 25rem;
-        padding: 1rem 0;
-        margin: auto;
-        text-align: center;
-        font-family: 'Noto Sans JP', sans-serif;
-     }
- }
+    div {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    border-radius: 1rem;
+    font-size: 2.8rem;
+    width: 25rem;
+    padding: 1rem 0;
+    margin: auto;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #soon {
+        height: 9.5rem;
+    
+        div {
+        font-size: 2rem;
+        width: 19rem;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #soon {
+        height: 7rem;
+    }
+}
