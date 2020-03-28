@@ -46,15 +46,10 @@ $secondaryColor: #FDCB46;
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    height: 100%;
-    
 }
 
 body {
     font-size: 1.6rem;
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr;
 }
 
 h1 {
@@ -94,7 +89,13 @@ footer {
 
 /* PAGE DE SELECTION DES MENUS */
 
-#container {
+#gridMainPage {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+#wrapper {
     margin: auto 0;
  }
 
@@ -264,3 +265,5 @@ footer {
         height: 7rem;
     }
 }
+
+/* MENU LA NOTE ENCHANTEE */
