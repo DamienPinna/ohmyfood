@@ -59,6 +59,12 @@ h1 {
     font-family: 'Noto Sans JP';
 }
 
+h2 {
+    text-align: center;
+    margin: 4rem 0 2rem 0;
+    font-family: 'Noto Sans JP';
+}
+
 a {
     text-decoration: none;
 }
@@ -67,6 +73,10 @@ header {
     display: flex;
     height: 11rem;
     background-color: $primaryColor;
+
+    a {
+        margin: auto;
+    }
 }
 
 footer {
@@ -95,10 +105,6 @@ footer {
     grid-template-rows: auto 1fr;
 }
 
-#wrapper {
-    margin: auto 0;
- }
-
 #selectionMenus {
     display: grid;
     grid-template-rows: 42rem;
@@ -106,6 +112,7 @@ footer {
     grid-template-columns: repeat(auto-fit, 30rem);
     grid-gap: 4rem;
     justify-content: center;
+    align-content: center;
     margin: 5rem 7rem;
 
     a {
@@ -267,3 +274,15 @@ footer {
 }
 
 /* MENU LA NOTE ENCHANTEE */
+
+#flexContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#carteMenu01 {
+    background-color: map-get($bgColorMenus, menu01);
+    box-shadow: $boxShadow;
+    width: 85%;
+    max-width: 100rem;
+}
