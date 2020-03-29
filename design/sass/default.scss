@@ -275,14 +275,45 @@ footer {
 
 /* MENU LA NOTE ENCHANTEE */
 
-#flexContainer {
+#wrapper {
     display: flex;
     justify-content: center;
+    margin-bottom: 8.6rem;
 }
 
 #carteMenu01 {
     background-color: map-get($bgColorMenus, menu01);
     box-shadow: $boxShadow;
     width: 85%;
-    max-width: 100rem;
+    max-width: 90rem;
+    padding : 7rem;
+}
+
+#mainTitleMenu {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.titleDescriptionMenu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.descritptionMenu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+}
+
+.rowMenu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+#footerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
