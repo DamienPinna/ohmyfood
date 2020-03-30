@@ -62,6 +62,7 @@ h1 {
 h2 {
     text-align: center;
     margin: 4rem 0 2rem 0;
+    font-size: 3rem;
     font-family: 'Noto Sans JP';
 }
 
@@ -160,6 +161,7 @@ footer {
 
     h2 {
         font-family: 'Devonshire', sans-serif;
+        margin-top: 0;
         margin-bottom: 1.5rem;
         font-weight: lighter;
         font-size: 2.6rem;
@@ -284,9 +286,36 @@ footer {
 #carteMenu01 {
     background-color: map-get($bgColorMenus, menu01);
     box-shadow: $boxShadow;
+    font-family: 'Devonshire', sans-serif;
     width: 85%;
     max-width: 90rem;
     padding : 7rem;
+
+    .titleDescriptionMenu {
+        img {
+            width: 25rem;
+            height: 1.5rem;
+            align-self: center;
+        }
+    }
+
+    h3 {
+        font-size: 4rem;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+    }
+
+    .rowMenu {
+        div {
+            font-size: 2.5rem;
+        }
+    }
 }
 
 #mainTitleMenu {
@@ -316,4 +345,50 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    span {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .titleDescriptionMenu {
+        img {
+            width: 20rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .titleDescriptionMenu {
+        img {
+            width: 15rem !important;
+        }
+    }
+
+    #carteMenu01 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    .rowMenu {
+        flex-direction: column;
+
+        div {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .titleDescriptionMenu {
+        img {
+            display: none;
+        }
+
+        h4 {
+            margin: auto;;
+        }
+    }
 }
