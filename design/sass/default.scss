@@ -134,7 +134,7 @@ footer {
     
     footer {
         a {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
     }
 }
@@ -390,5 +390,15 @@ footer {
         h4 {
             margin: auto;;
         }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #wrapper {
+        margin-bottom: 4.3rem;
+    }
+
+    #carteMenu01 {
+            padding: 7rem 3rem;
     }
 }
