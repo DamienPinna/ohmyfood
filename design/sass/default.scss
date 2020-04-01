@@ -11,7 +11,10 @@ $fontsList: 'Noto Sans JP',
             'Source Serif Pro',
             'Dancing Script',
             'Caveat',
-            'Kaushan Script';
+            'Kaushan Script',
+            'Kalam',
+            'Kurale',
+            'Crimson Text';
 
 @each $font in $fontsList {
     @include googleFonts($font);
@@ -275,47 +278,13 @@ footer {
     }
 }
 
-/* MENU LA NOTE ENCHANTEE */
+
+/* COMMUN A TOUS LES MENUS */
 
 #wrapper {
     display: flex;
     justify-content: center;
     margin-bottom: 8.6rem;
-}
-
-#carteMenu01 {
-    background-color: map-get($bgColorMenus, menu01);
-    box-shadow: $boxShadow;
-    font-family: 'Devonshire', sans-serif;
-    width: 85%;
-    max-width: 90rem;
-    padding : 7rem;
-
-    .titleDescriptionMenu {
-        img {
-            width: 25rem;
-            height: 1.5rem;
-            align-self: center;
-        }
-    }
-
-    h3 {
-        font-size: 4rem;
-    }
-
-    h4 {
-        font-size: 3rem;
-    }
-
-    p {
-        font-size: 2.5rem;
-    }
-
-    .rowMenu {
-        div {
-            font-size: 2.5rem;
-        }
-    }
 }
 
 #mainTitleMenu {
@@ -341,64 +310,159 @@ footer {
     margin-bottom: 3rem;
 }
 
-#footerMenu {
+
+/* MENU LA NOTE ENCHANTEE */
+
+#carteMenu01 {
+    background-color: map-get($bgColorMenus, menu01);
+    box-shadow: $boxShadow;
+    font-family: 'Kalam', sans-serif;
+    width: 85%;
+    max-width: 90rem;
+    padding : 7rem;
+
+    .titleDescriptionMenu {
+        img {
+            width: 25rem;
+            height: 1.5rem;
+            align-self: center;
+        }
+    }
+
+    h3 {
+        font-size: 5rem;
+        font-family: 'Devonshire', sans-serif;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .rowMenu {
+        div {
+            font-size: 2rem;
+        }
+    }
+}
+
+#footerMenu01 {
     display: flex;
     justify-content: center;
     align-items: center;
 
     span {
-        font-size: 3rem;
+        font-size: 3.5rem;
+        font-family: 'Devonshire', sans-serif;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .titleDescriptionMenu {
-        img {
-            width: 20rem !important;
+    #carteMenu01 {
+        .titleDescriptionMenu {
+            img {
+                width: 20rem !important;
+            }
         }
     }
 }
 
 @media screen and (max-width: 880px) {
-    .titleDescriptionMenu {
-        img {
-            width: 15rem !important;
-        }
-    }
-
     #carteMenu01 {
         width: 90%;
+
+        .titleDescriptionMenu {
+            img {
+                width: 15rem !important;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 805px) {
-    .rowMenu {
-        flex-direction: column;
-
-        div {
-            text-align: center;
+    #carteMenu01 {
+        .rowMenu {
+            flex-direction: column;
+    
+            div {
+                text-align: center;
+            }
         }
     }
 }
 
 @media screen and (max-width: 760px) {
+    #carteMenu01 {
+        .titleDescriptionMenu {
+            img {
+                display: none;
+            }
+    
+            h4 {
+                margin: auto;;
+            }
+        }
+    }  
+}
+
+@media screen and (max-width: 680px) {
+    #carteMenu01 {
+            padding: 7rem 3rem;
+    }
+}
+
+
+/* MENU LE CHIC A LA FRANCAISE */
+
+#carteMenu02 {
+    background-color: map-get($bgColorMenus, menu02);
+    box-shadow: $boxShadow;
+    font-family: 'Crimson Text', sans-serif;
+    width: 85%;
+    max-width: 90rem;
+    padding : 12rem 2rem 14rem 2rem;
+
     .titleDescriptionMenu {
         img {
-            display: none;
+            width: 30rem;
+            height: 1.5rem;
+            align-self: center;
         }
+    }
 
-        h4 {
-            margin: auto;;
+    .descritptionMenu {
+        margin: 0 8rem 6rem 8rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+        font-family: 'Kurale', sans-serif;
+        margin-bottom: 9rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .rowMenu {
+        div {
+            font-size: 2rem;
         }
     }
 }
 
+
+/*MEDIA QUERIES GENERAUX */
+
 @media screen and (max-width: 680px) {
     #wrapper {
         margin-bottom: 4.3rem;
-    }
-
-    #carteMenu01 {
-            padding: 7rem 3rem;
     }
 }
