@@ -477,6 +477,61 @@ footer {
     }
 }
 
+@media screen and (max-width: 1060px) {
+    #carteMenu02 {
+        .titleDescriptionMenu {
+            img {
+                width: 25rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 945px) {
+    #carteMenu02 {
+        .titleDescriptionMenu {
+            img {
+                width: 20rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 830px) {
+    #carteMenu02 {
+        width: 90%;
+    
+        .titleDescriptionMenu {
+            img {
+                display: none;
+            }
+    
+            h4 {
+                margin: auto;;
+            }
+        }
+    }  
+}
+
+@media screen and (max-width: 805px) {
+    #carteMenu02 {
+        .descritptionMenu {
+            margin: 0 1rem 6rem 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 715px) {
+    #carteMenu02 {
+        .rowMenu {
+            flex-direction: column;
+    
+        
+            text-align: center;
+        
+        }
+    }
+}
 
 /*MEDIA QUERIES GENERAUX */
 
