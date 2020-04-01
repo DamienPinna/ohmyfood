@@ -301,7 +301,6 @@ footer {
 .descritptionMenu {
     display: flex;
     flex-direction: column;
-    margin-bottom: 6rem;
 }
 
 .rowMenu {
@@ -329,9 +328,14 @@ footer {
         }
     }
 
+    .descritptionMenu {
+        margin-bottom: 6rem;
+    }
+
     h3 {
         font-size: 5rem;
         font-family: 'Devonshire', sans-serif;
+        font-weight: lighter;
     }
 
     h4 {
@@ -437,10 +441,25 @@ footer {
         margin: 0 8rem 6rem 8rem;
     }
 
+    #appetizer {
+        color: #C67412;
+    }
+
+    #mainMeal {
+        color: #A56799;
+    }
+
+    #dessert {
+        color: #6E4CCC;
+    }
+
     h3 {
         font-size: 3.5rem;
         font-family: 'Kurale', sans-serif;
         margin-bottom: 9rem;
+        background: linear-gradient(45deg, #C77412 30%, #905BFD 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     h4 {

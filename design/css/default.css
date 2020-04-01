@@ -202,8 +202,7 @@ footer {
 
 .descritptionMenu {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 6rem; }
+  flex-direction: column; }
 
 .rowMenu {
   display: flex;
@@ -222,9 +221,12 @@ footer {
     width: 25rem;
     height: 1.5rem;
     align-self: center; }
+  #carteMenu01 .descritptionMenu {
+    margin-bottom: 6rem; }
   #carteMenu01 h3 {
     font-size: 5rem;
-    font-family: 'Devonshire', sans-serif; }
+    font-family: 'Devonshire', sans-serif;
+    font-weight: lighter; }
   #carteMenu01 h4 {
     font-size: 3rem; }
   #carteMenu01 p {
@@ -275,10 +277,19 @@ footer {
     align-self: center; }
   #carteMenu02 .descritptionMenu {
     margin: 0 8rem 6rem 8rem; }
+  #carteMenu02 #appetizer {
+    color: #C67412; }
+  #carteMenu02 #mainMeal {
+    color: #A56799; }
+  #carteMenu02 #dessert {
+    color: #6E4CCC; }
   #carteMenu02 h3 {
     font-size: 3.5rem;
     font-family: 'Kurale', sans-serif;
-    margin-bottom: 9rem; }
+    margin-bottom: 9rem;
+    background: linear-gradient(45deg, #C77412 30%, #905BFD 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   #carteMenu02 h4 {
     font-size: 2.5rem; }
   #carteMenu02 p {
