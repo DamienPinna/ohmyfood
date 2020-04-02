@@ -322,7 +322,7 @@ footer {
 
     .titleDescriptionMenu {
         img {
-            width: 25rem;
+            width: 33%;
             height: 1.5rem;
             align-self: center;
         }
@@ -364,11 +364,11 @@ footer {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 940px) {
     #carteMenu01 {
         .titleDescriptionMenu {
             img {
-                width: 20rem !important;
+                width: 30%;
             }
         }
     }
@@ -377,12 +377,6 @@ footer {
 @media screen and (max-width: 880px) {
     #carteMenu01 {
         width: 90%;
-
-        .titleDescriptionMenu {
-            img {
-                width: 15rem !important;
-            }
-        }
     }
 }
 
@@ -402,19 +396,25 @@ footer {
     #carteMenu01 {
         .titleDescriptionMenu {
             img {
-                display: none;
-            }
-    
-            h4 {
-                margin: auto;;
-            }
+                width: 25%;
+            } 
         }
     }  
 }
 
 @media screen and (max-width: 680px) {
     #carteMenu01 {
-            padding: 7rem 3rem;
+        padding: 7rem 3rem;
+
+        .titleDescriptionMenu {
+            img {
+                display: none;
+            }
+
+            h4 {
+                margin: auto;;
+            }
+        }
     }
 }
 
@@ -431,7 +431,7 @@ footer {
 
     .titleDescriptionMenu {
         img {
-            width: 30rem;
+            width: 33%;
             height: 1.5rem;
             align-self: center;
         }
@@ -477,21 +477,11 @@ footer {
     }
 }
 
-@media screen and (max-width: 1060px) {
-    #carteMenu02 {
-        .titleDescriptionMenu {
-            img {
-                width: 25rem !important;
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 945px) {
     #carteMenu02 {
         .titleDescriptionMenu {
             img {
-                width: 20rem !important;
+                width: 30%;
             }
         }
     }
@@ -500,16 +490,6 @@ footer {
 @media screen and (max-width: 830px) {
     #carteMenu02 {
         width: 90%;
-    
-        .titleDescriptionMenu {
-            img {
-                display: none;
-            }
-    
-            h4 {
-                margin: auto;;
-            }
-        }
     }  
 }
 
@@ -521,17 +501,47 @@ footer {
     }
 }
 
-@media screen and (max-width: 715px) {
+@media screen and (max-width: 745px) {
     #carteMenu02 {
-        .rowMenu {
-            flex-direction: column;
-    
-        
-            text-align: center;
-        
+        .titleDescriptionMenu {
+            img {
+                width: 25%;
+            }
         }
     }
 }
+
+@media screen and (max-width: 715px) {
+    #carteMenu02 {
+        .titleDescriptionMenu {
+            img {
+                display: none;
+            }
+
+            h4 {
+                margin: auto;;
+            }
+        }
+
+        .rowMenu {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #appetizer {
+            .descritptionMenu {
+                border-bottom: 1px dashed #C67412;
+            }
+        }
+
+        #mainMeal {
+            .descritptionMenu {
+                border-bottom: 1px dashed #A56799;
+            }
+        }
+    }
+}
+
 
 /*MEDIA QUERIES GENERAUX */
 

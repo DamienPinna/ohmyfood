@@ -218,7 +218,7 @@ footer {
   max-width: 90rem;
   padding: 7rem; }
   #carteMenu01 .titleDescriptionMenu img {
-    width: 25rem;
+    width: 33%;
     height: 1.5rem;
     align-self: center; }
   #carteMenu01 .descritptionMenu {
@@ -242,14 +242,12 @@ footer {
     font-size: 3.5rem;
     font-family: 'Devonshire', sans-serif; }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 940px) {
   #carteMenu01 .titleDescriptionMenu img {
-    width: 20rem !important; } }
+    width: 30%; } }
 @media screen and (max-width: 880px) {
   #carteMenu01 {
-    width: 90%; }
-    #carteMenu01 .titleDescriptionMenu img {
-      width: 15rem !important; } }
+    width: 90%; } }
 @media screen and (max-width: 805px) {
   #carteMenu01 .rowMenu {
     flex-direction: column; }
@@ -257,12 +255,14 @@ footer {
       text-align: center; } }
 @media screen and (max-width: 760px) {
   #carteMenu01 .titleDescriptionMenu img {
-    display: none; }
-  #carteMenu01 .titleDescriptionMenu h4 {
-    margin: auto; } }
+    width: 25%; } }
 @media screen and (max-width: 680px) {
   #carteMenu01 {
-    padding: 7rem 3rem; } }
+    padding: 7rem 3rem; }
+    #carteMenu01 .titleDescriptionMenu img {
+      display: none; }
+    #carteMenu01 .titleDescriptionMenu h4 {
+      margin: auto; } }
 /* MENU LE CHIC A LA FRANCAISE */
 #carteMenu02 {
   background-color: #FFF5FE;
@@ -272,7 +272,7 @@ footer {
   max-width: 90rem;
   padding: 12rem 2rem 14rem 2rem; }
   #carteMenu02 .titleDescriptionMenu img {
-    width: 30rem;
+    width: 33%;
     height: 1.5rem;
     align-self: center; }
   #carteMenu02 .descritptionMenu {
@@ -297,26 +297,30 @@ footer {
   #carteMenu02 .rowMenu div {
     font-size: 2rem; }
 
-@media screen and (max-width: 1060px) {
-  #carteMenu02 .titleDescriptionMenu img {
-    width: 25rem !important; } }
 @media screen and (max-width: 945px) {
   #carteMenu02 .titleDescriptionMenu img {
-    width: 20rem !important; } }
+    width: 30%; } }
 @media screen and (max-width: 830px) {
   #carteMenu02 {
-    width: 90%; }
-    #carteMenu02 .titleDescriptionMenu img {
-      display: none; }
-    #carteMenu02 .titleDescriptionMenu h4 {
-      margin: auto; } }
+    width: 90%; } }
 @media screen and (max-width: 805px) {
   #carteMenu02 .descritptionMenu {
     margin: 0 1rem 6rem 1rem; } }
+@media screen and (max-width: 745px) {
+  #carteMenu02 .titleDescriptionMenu img {
+    width: 25%; } }
 @media screen and (max-width: 715px) {
+  #carteMenu02 .titleDescriptionMenu img {
+    display: none; }
+  #carteMenu02 .titleDescriptionMenu h4 {
+    margin: auto; }
   #carteMenu02 .rowMenu {
     flex-direction: column;
-    text-align: center; } }
+    text-align: center; }
+  #carteMenu02 #appetizer .descritptionMenu {
+    border-bottom: 1px dashed #C67412; }
+  #carteMenu02 #mainMeal .descritptionMenu {
+    border-bottom: 1px dashed #A56799; } }
 /*MEDIA QUERIES GENERAUX */
 @media screen and (max-width: 680px) {
   #wrapper {
