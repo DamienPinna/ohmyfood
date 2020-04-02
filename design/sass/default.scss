@@ -210,7 +210,7 @@ footer {
         margin-bottom: 1.5rem;
         font-weight: lighter;
         font-size: 3rem;
-        background: linear-gradient(to bottom right, #2140DF, #0887FB);
+        background: linear-gradient(to bottom right, #0228DD, #229DF9);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -538,6 +538,251 @@ footer {
             .descritptionMenu {
                 border-bottom: 1px dashed #A56799;
             }
+        }
+    }
+}
+
+
+/* MENU LE DELICE DES PAPILLES */
+
+#carteMenu03 {
+    background-color: map-get($bgColorMenus, menu03);
+    box-shadow: $boxShadow;
+    font-family: 'Caveat', sans-serif;
+    width: 85%;
+    max-width: 90rem;
+    padding : 12rem 2rem 14rem 2rem;
+
+    .titleDescriptionMenu {
+        img {
+            width: 33%;
+            height: 1.5rem;
+            align-self: center;
+        }
+    }
+
+    .descritptionMenu {
+        margin: 0 8rem 6rem 8rem;
+    }
+
+    h3 {
+        font-size: 5rem;
+        font-family: 'Dancing Script', sans-serif;
+        margin-bottom: 9rem;
+        background: linear-gradient(45deg, #0228DD 30%, #229DF9 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+        font-weight: lighter;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .rowMenu {
+        div {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 945px) {
+    #carteMenu03 {
+        .titleDescriptionMenu {
+            img {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 830px) {
+    #carteMenu03 {
+        width: 90%;
+    }  
+}
+
+@media screen and (max-width: 805px) {
+    #carteMenu03 {
+        .descritptionMenu {
+            margin: 0 1rem 6rem 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 745px) {
+    #carteMenu03 {
+        .titleDescriptionMenu {
+            img {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 715px) {
+    #carteMenu03 {
+        .titleDescriptionMenu {
+            img {
+                display: none;
+            }
+
+            h4 {
+                margin: auto;;
+            }
+        }
+
+        .rowMenu {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #appetizer {
+            .descritptionMenu {
+                border-bottom: 1px dashed #0228DD;
+            }
+        }
+
+        #mainMeal {
+            .descritptionMenu {
+                border-bottom: 1px dashed #229DF9;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #carteMenu03 {
+        h3 {
+            font-size: 4rem;
+        }
+    }
+}
+
+
+/* MENU LA PALETTE DU GOUT */
+
+#carteMenu04 {
+    background-color: map-get($bgColorMenus, menu03);
+    box-shadow: $boxShadow;
+    font-family: 'Caveat', sans-serif;
+    width: 85%;
+    max-width: 90rem;
+    padding : 12rem 2rem 14rem 2rem;
+
+    .titleDescriptionMenu {
+        img {
+            width: 33%;
+            height: 1.5rem;
+            align-self: center;
+        }
+    }
+
+    .descritptionMenu {
+        margin: 0 8rem 6rem 8rem;
+    }
+
+    h3 {
+        font-size: 6rem;
+        font-family: 'Kaushan Script', sans-serif;
+        font-weight: lighter;
+        margin-bottom: 9rem;
+        background: linear-gradient(45deg, #42973C 30%, #BFFF7E 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+        font-weight: lighter;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .rowMenu {
+        div {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 945px) {
+    #carteMenu04 {
+        .titleDescriptionMenu {
+            img {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 830px) {
+    #carteMenu04 {
+        width: 90%;
+    }  
+}
+
+@media screen and (max-width: 805px) {
+    #carteMenu04 {
+        .descritptionMenu {
+            margin: 0 1rem 6rem 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 745px) {
+    #carteMenu04 {
+        .titleDescriptionMenu {
+            img {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 715px) {
+    #carteMenu04 {
+        .titleDescriptionMenu {
+            img {
+                display: none;
+            }
+
+            h4 {
+                margin: auto;;
+            }
+        }
+
+        .rowMenu {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #appetizer {
+            .descritptionMenu {
+                border-bottom: 1px dashed #42973C;
+            }
+        }
+
+        #mainMeal {
+            .descritptionMenu {
+                border-bottom: 1px dashed #BFFF7E;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #carteMenu04 {
+        h3 {
+            font-size: 4rem;
         }
     }
 }

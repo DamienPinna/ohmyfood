@@ -137,7 +137,7 @@ footer {
     margin-bottom: 1.5rem;
     font-weight: lighter;
     font-size: 3rem;
-    background: linear-gradient(to bottom right, #2140DF, #0887FB);
+    background: linear-gradient(to bottom right, #0228DD, #229DF9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   #menuCoverPage03 div div {
@@ -321,6 +321,121 @@ footer {
     border-bottom: 1px dashed #C67412; }
   #carteMenu02 #mainMeal .descritptionMenu {
     border-bottom: 1px dashed #A56799; } }
+/* MENU LE DELICE DES PAPILLES */
+#carteMenu03 {
+  background-color: #F9F9F9;
+  box-shadow: 0.05rem 0.05rem 1rem #d6d6d6;
+  font-family: 'Caveat', sans-serif;
+  width: 85%;
+  max-width: 90rem;
+  padding: 12rem 2rem 14rem 2rem; }
+  #carteMenu03 .titleDescriptionMenu img {
+    width: 33%;
+    height: 1.5rem;
+    align-self: center; }
+  #carteMenu03 .descritptionMenu {
+    margin: 0 8rem 6rem 8rem; }
+  #carteMenu03 h3 {
+    font-size: 5rem;
+    font-family: 'Dancing Script', sans-serif;
+    margin-bottom: 9rem;
+    background: linear-gradient(45deg, #0228DD 30%, #229DF9 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  #carteMenu03 h4 {
+    font-size: 2.5rem;
+    font-weight: lighter; }
+  #carteMenu03 p {
+    font-size: 2rem; }
+  #carteMenu03 .rowMenu div {
+    font-size: 2rem;
+    font-weight: bold; }
+
+@media screen and (max-width: 945px) {
+  #carteMenu03 .titleDescriptionMenu img {
+    width: 30%; } }
+@media screen and (max-width: 830px) {
+  #carteMenu03 {
+    width: 90%; } }
+@media screen and (max-width: 805px) {
+  #carteMenu03 .descritptionMenu {
+    margin: 0 1rem 6rem 1rem; } }
+@media screen and (max-width: 745px) {
+  #carteMenu03 .titleDescriptionMenu img {
+    width: 25%; } }
+@media screen and (max-width: 715px) {
+  #carteMenu03 .titleDescriptionMenu img {
+    display: none; }
+  #carteMenu03 .titleDescriptionMenu h4 {
+    margin: auto; }
+  #carteMenu03 .rowMenu {
+    flex-direction: column;
+    text-align: center; }
+  #carteMenu03 #appetizer .descritptionMenu {
+    border-bottom: 1px dashed #0228DD; }
+  #carteMenu03 #mainMeal .descritptionMenu {
+    border-bottom: 1px dashed #229DF9; } }
+@media screen and (max-width: 490px) {
+  #carteMenu03 h3 {
+    font-size: 4rem; } }
+/* MENU LA PALETTE DU GOUT */
+#carteMenu04 {
+  background-color: #F9F9F9;
+  box-shadow: 0.05rem 0.05rem 1rem #d6d6d6;
+  font-family: 'Caveat', sans-serif;
+  width: 85%;
+  max-width: 90rem;
+  padding: 12rem 2rem 14rem 2rem; }
+  #carteMenu04 .titleDescriptionMenu img {
+    width: 33%;
+    height: 1.5rem;
+    align-self: center; }
+  #carteMenu04 .descritptionMenu {
+    margin: 0 8rem 6rem 8rem; }
+  #carteMenu04 h3 {
+    font-size: 6rem;
+    font-family: 'Kaushan Script', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 9rem;
+    background: linear-gradient(45deg, #42973C 30%, #BFFF7E 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  #carteMenu04 h4 {
+    font-size: 2.5rem;
+    font-weight: lighter; }
+  #carteMenu04 p {
+    font-size: 2rem; }
+  #carteMenu04 .rowMenu div {
+    font-size: 2rem;
+    font-weight: bold; }
+
+@media screen and (max-width: 945px) {
+  #carteMenu04 .titleDescriptionMenu img {
+    width: 30%; } }
+@media screen and (max-width: 830px) {
+  #carteMenu04 {
+    width: 90%; } }
+@media screen and (max-width: 805px) {
+  #carteMenu04 .descritptionMenu {
+    margin: 0 1rem 6rem 1rem; } }
+@media screen and (max-width: 745px) {
+  #carteMenu04 .titleDescriptionMenu img {
+    width: 25%; } }
+@media screen and (max-width: 715px) {
+  #carteMenu04 .titleDescriptionMenu img {
+    display: none; }
+  #carteMenu04 .titleDescriptionMenu h4 {
+    margin: auto; }
+  #carteMenu04 .rowMenu {
+    flex-direction: column;
+    text-align: center; }
+  #carteMenu04 #appetizer .descritptionMenu {
+    border-bottom: 1px dashed #42973C; }
+  #carteMenu04 #mainMeal .descritptionMenu {
+    border-bottom: 1px dashed #BFFF7E; } }
+@media screen and (max-width: 490px) {
+  #carteMenu04 h3 {
+    font-size: 4rem; } }
 /*MEDIA QUERIES GENERAUX */
 @media screen and (max-width: 680px) {
   #wrapper {
