@@ -59,7 +59,7 @@ footer {
     font-family: 'Noto Sans JP', sans-serif; }
 
 /* PAGE DE SELECTION DES MENUS */
-#gridMainPage {
+#gridCSS {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr; }
@@ -436,6 +436,22 @@ footer {
 @media screen and (max-width: 490px) {
   #carteMenu04 h3 {
     font-size: 4rem; } }
+/* PAGE MENTIONS LEGALES */
+#legalMentions {
+  max-width: 125rem;
+  margin: 0 auto;
+  padding: 0 2.5rem; }
+  #legalMentions h2 {
+    margin-bottom: 5rem; }
+  #legalMentions p {
+    margin-bottom: 2.5rem; }
+
+@media screen and (max-width: 300px) {
+  #legalMentions h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem; }
+  #legalMentions p {
+    text-align: justify; } }
 /*MEDIA QUERIES GENERAUX */
 @media screen and (max-width: 680px) {
   #wrapper {
