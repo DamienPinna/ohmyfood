@@ -89,6 +89,7 @@ footer {
     background-color: $primaryColor;
     justify-content: space-between;
     align-items: center;
+    -webkit-position: sticky;
     position: sticky;
     bottom: 0;
     
@@ -161,6 +162,14 @@ footer {
 #menuCoverPage01 {
     background-color: map-get($bgColorMenus, menu01);
     box-shadow: $boxShadow;
+    transition-property: opacity;
+    transition-duration: 500ms;
+
+    img {
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 500ms;
+    }
 
     h2 {
         font-family: 'Devonshire', sans-serif;
@@ -169,6 +178,8 @@ footer {
         font-weight: lighter;
         font-size: 2.6rem;
         color: #3C1218;
+        transition-property: font-size;
+        transition-duration: 500ms;
     }
 
     div div {
@@ -176,12 +187,16 @@ footer {
         font-size: 3.5rem;
         font-weight: bold;
         color: #3C1218;
+        transition-property: font-size;
+        transition-duration: 500ms;
     }
 }
 
 #menuCoverPage02 {
     background-color: map-get($bgColorMenus, menu02);
     box-shadow: $boxShadow;
+    transition-property: opacity;
+    transition-duration: 500ms;
 
     h2 {
         font-family: 'Lobster Two', sans-serif;
@@ -191,6 +206,8 @@ footer {
         background: linear-gradient(to bottom right, #C77412, #905BFD);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        transition-property: font-size;
+        transition-duration: 500ms;
     }
 
     div div {
@@ -198,12 +215,16 @@ footer {
         font-size: 3.5rem;
         font-weight: bold;
         color: #C77412;
+        transition-property: font-size;
+        transition-duration: 500ms;
     }
 }
 
 #menuCoverPage03 {
     background-color: map-get($bgColorMenus, menu03);
     box-shadow: $boxShadow;
+    transition-property: opacity;
+    transition-duration: 500ms;
 
     h2 {
         font-family: 'Dancing Script', sans-serif;
@@ -213,18 +234,24 @@ footer {
         background: linear-gradient(to bottom right, #0228DD, #229DF9);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        transition-property: font-size;
+        transition-duration: 500ms;
     }
 
     div div {
         font-family: 'Caveat', sans-serif;
         font-size: 4rem;
         color: #0887FB;
+        transition-property: font-size;
+        transition-duration: 500ms;
     }
 }
 
 #menuCoverPage04 {
     background-color: map-get($bgColorMenus, menu04);
     box-shadow: $boxShadow;
+    transition-property: opacity;
+    transition-duration: 500ms;
 
     h2 {
         font-family: 'Kaushan Script', sans-serif;
@@ -236,12 +263,16 @@ footer {
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
+        transition-property: font-size;
+        transition-duration: 500ms;
     }
 
     div div {
         font-family: 'Caveat', sans-serif;
         font-size: 4rem;
         color: #72BF56;
+        transition-property: font-size;
+        transition-duration: 500ms;
     }
 }
 
@@ -821,5 +852,61 @@ footer {
 @media screen and (max-width: 680px) {
     #wrapper {
         margin-bottom: 4.3rem;
+    }
+}
+
+/* ANIMATIONS */
+
+// ZOOM + OPACITE
+
+#menuCoverPage01:hover {
+    opacity: 0.8;
+
+    img {
+        transform: scale(1.3);
+    }
+
+    h2 {
+        font-size: 3.1rem;
+    }
+
+    div {
+        font-size: 4rem;
+    }
+}
+
+#menuCoverPage02:hover {
+    opacity: 0.8;
+
+    h2 {
+        font-size: 3.1rem;
+    }
+
+    div {
+        font-size: 4rem;
+    }
+}
+
+#menuCoverPage03:hover {
+    opacity: 0.8;
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    div {
+        font-size: 5rem;
+    }
+}
+
+#menuCoverPage04:hover {
+    opacity: 0.8;
+
+    h2 {
+        font-size: 3.1rem;
+    }
+
+    div {
+        font-size: 5rem;
     }
 }
