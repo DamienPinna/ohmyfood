@@ -57,7 +57,12 @@ footer {
     margin: 0 2rem;
     color: #FDCB46;
     font-size: 2.4rem;
-    font-family: 'Noto Sans JP', sans-serif; }
+    font-family: 'Noto Sans JP', sans-serif;
+    animation-name: wiggle;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out; }
 
 /* PAGE DE SELECTION DES MENUS */
 #gridCSS {
@@ -515,5 +520,13 @@ footer {
     font-size: 3.1rem; }
   #menuCoverPage04:hover div {
     font-size: 5rem; }
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(0.5rem); }
+  25% {
+    transform: translateX(-0.5rem); }
+  50% {
+    transform: translateX(0rem); } }
 
 /*# sourceMappingURL=default.css.map */
