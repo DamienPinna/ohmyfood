@@ -615,6 +615,31 @@ footer {
         font-weight: lighter;
     }
 
+    #appetizer {
+        h4 {
+            &::after {
+                border-bottom: solid 0.3rem #0228DD;
+            }
+        }
+    }
+
+    #mainMeal {
+        h4 {
+            &::after {
+                border-bottom: solid 0.3rem #0670F3;
+            }
+        }
+    }
+
+    #desert {
+        h4 {
+            &::after {
+
+                border-bottom: solid 0.3rem #229DF9;
+            }
+        }
+    }
+
     p {
         font-size: 2rem;
     }
@@ -736,6 +761,10 @@ footer {
     h4 {
         font-size: 2.5rem;
         font-weight: lighter;
+
+        &::after {
+            border-bottom: solid 0.3rem #BFFF7E;
+        }
     }
 
     p {
@@ -922,4 +951,21 @@ footer {
     0% {transform: translateX(0.5rem);}
     25% {transform: translateX(-0.5rem);}
     50% {transform: translateX(0rem);}
+}
+
+// SOULIGNEMENT DES TITRES
+
+h4 {
+    &::after {
+    content: '';
+    display: block;
+    border-bottom: solid 0.3rem;
+    transform: scaleX(0);
+    transform-origin: 0rem;
+    transition: transform 1s;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+    }
 }
