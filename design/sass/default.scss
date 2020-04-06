@@ -281,35 +281,56 @@ footer {
     }
 }
 
-#soon {
+#partSoon {
     height: 11rem;
 
-    div {
+    #btnSoon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $primaryColor;
     color: $secondaryColor;
     border-radius: 1rem;
-    font-size: 2.8rem;
     width: 25rem;
-    padding: 1rem 0;
+    height: 5rem;
     margin: auto;
-    text-align: center;
-    font-family: 'Noto Sans JP', sans-serif;
+
+        #soon {
+            font-size: 2.5rem;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        #dots {
+            display: none;
+        
+            .dot {
+                font-size: 8rem;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 460px) {
-    #soon {
+    #partSoon {
         height: 9.5rem;
     
-        div {
-        font-size: 2rem;
+        #btnSoon {
         width: 19rem;
+        height: 3.8rem;
+
+            #soon {
+                font-size: 2rem;
+            }
+
+            .dot {
+                font-size: 6rem !important;
+            }
         }
     }
 }
 
 @media screen and (max-width: 350px) {
-    #soon {
+    #partSoon {
         height: 7rem;
     }
 }
@@ -967,5 +988,20 @@ h4 {
 
     &:hover::after {
         transform: scaleX(1);
+    }
+}
+
+// EFFET BOUNCE
+
+#partSoon {
+    #btnSoon:hover {
+        #soon {
+            display: none;
+        }
+
+        #dots {
+            display: block;
+            transform: translateY(-1.2rem);
+        }
     }
 }

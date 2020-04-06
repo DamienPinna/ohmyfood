@@ -197,27 +197,38 @@ footer {
     transition-property: font-size;
     transition-duration: 500ms; }
 
-#soon {
+#partSoon {
   height: 11rem; }
-  #soon div {
+  #partSoon #btnSoon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #579C87;
     color: #FDCB46;
     border-radius: 1rem;
-    font-size: 2.8rem;
     width: 25rem;
-    padding: 1rem 0;
-    margin: auto;
-    text-align: center;
-    font-family: 'Noto Sans JP', sans-serif; }
+    height: 5rem;
+    margin: auto; }
+    #partSoon #btnSoon #soon {
+      font-size: 2.5rem;
+      font-family: 'Noto Sans JP', sans-serif; }
+    #partSoon #btnSoon #dots {
+      display: none; }
+      #partSoon #btnSoon #dots .dot {
+        font-size: 8rem; }
 
 @media screen and (max-width: 460px) {
-  #soon {
+  #partSoon {
     height: 9.5rem; }
-    #soon div {
-      font-size: 2rem;
-      width: 19rem; } }
+    #partSoon #btnSoon {
+      width: 19rem;
+      height: 3.8rem; }
+      #partSoon #btnSoon #soon {
+        font-size: 2rem; }
+      #partSoon #btnSoon .dot {
+        font-size: 6rem !important; } }
 @media screen and (max-width: 350px) {
-  #soon {
+  #partSoon {
     height: 7rem; } }
 /* COMMUN A TOUS LES MENUS */
 #wrapper {
@@ -545,5 +556,11 @@ h4::after {
   transition: transform 1s; }
 h4:hover::after {
   transform: scaleX(1); }
+
+#partSoon #btnSoon:hover #soon {
+  display: none; }
+#partSoon #btnSoon:hover #dots {
+  display: block;
+  transform: translateY(-1.2rem); }
 
 /*# sourceMappingURL=default.css.map */
