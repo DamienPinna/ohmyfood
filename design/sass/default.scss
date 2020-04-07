@@ -18,6 +18,12 @@ $boxShadow: 0.05rem 0.05rem 1rem #d6d6d6;
 $primaryColor: #579C87;
 $secondaryColor: #FDCB46;
 
+//MIXIN BREACKPOINT
+@mixin breackpoint ($breackpoint) {
+    @media screen and (max-width: $breackpoint) {
+        @content;
+    }
+}
 
 /* GENERAL */
 
@@ -84,6 +90,10 @@ footer {
         animation-iteration-count: infinite;
         animation-direction: alternate;
         animation-timing-function: ease-in-out;
+
+        @include breackpoint(460px) {
+            font-size: 1.8rem;
+        }
     }
 }
 
@@ -106,6 +116,10 @@ footer {
     align-content: center;
     margin: 5rem 7rem;
 
+    @include breackpoint(460px) {
+        margin: 5rem 1rem;
+    }
+
     a {
         display: flex;
         justify-content: center;
@@ -115,18 +129,6 @@ footer {
         div {
             text-align: center;
         }
-}
-
-@media screen and (max-width: 460px) {
-    #selectionMenus {
-        margin: 5rem 1rem;
-    }
-    
-    footer {
-        a {
-            font-size: 1.8rem;
-        }
-    }
 }
 
 @media screen and (max-width: 350px) {

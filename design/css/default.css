@@ -64,6 +64,9 @@ footer {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out; }
+    @media screen and (max-width: 460px) {
+      footer a {
+        font-size: 1.8rem; } }
 
 /* PAGE DE SELECTION DES MENUS */
 #gridCSS {
@@ -80,6 +83,9 @@ footer {
   justify-content: center;
   align-content: center;
   margin: 5rem 7rem; }
+  @media screen and (max-width: 460px) {
+    #selectionMenus {
+      margin: 5rem 1rem; } }
   #selectionMenus a {
     display: flex;
     justify-content: center;
@@ -87,12 +93,6 @@ footer {
   #selectionMenus div {
     text-align: center; }
 
-@media screen and (max-width: 460px) {
-  #selectionMenus {
-    margin: 5rem 1rem; }
-
-  footer a {
-    font-size: 1.8rem; } }
 @media screen and (max-width: 350px) {
   #selectionMenus {
     grid-template-columns: 25rem;
