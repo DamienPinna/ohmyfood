@@ -560,7 +560,21 @@ h4:hover::after {
 #partSoon #btnSoon:hover #soon {
   display: none; }
 #partSoon #btnSoon:hover #dots {
-  display: block;
+  display: inline-flex;
   transform: translateY(-1.2rem); }
+#partSoon #btnSoon:hover .dot_01 {
+  animation: bounce 350ms infinite alternate; }
+#partSoon #btnSoon:hover .dot_02 {
+  animation: bounce 350ms infinite alternate;
+  animation-delay: 116ms; }
+#partSoon #btnSoon:hover .dot_03 {
+  animation: bounce 350ms infinite alternate;
+  animation-delay: 233ms; }
+
+@keyframes bounce {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(-1.8rem); } }
 
 /*# sourceMappingURL=default.css.map */
