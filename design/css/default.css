@@ -237,23 +237,18 @@ footer {
   justify-content: center;
   margin-bottom: 8.6rem; }
 
+.titleDescriptionMenu, .rowMenu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem; }
+
 #mainTitleMenu {
   text-align: center;
   margin-bottom: 4rem; }
 
-.titleDescriptionMenu {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 3rem; }
-
 .descritptionMenu {
   display: flex;
   flex-direction: column; }
-
-.rowMenu {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 3rem; }
 
 /* MENU LA NOTE ENCHANTEE */
 #carteMenu01 {

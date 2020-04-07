@@ -319,10 +319,18 @@ footer {
 
 /* COMMUN A TOUS LES MENUS */
 
+@mixin djm ($display, $justify-content, $margin-bottom) {
+    display: $display;
+    justify-content: $justify-content;
+    margin-bottom: $margin-bottom;
+}
+
 #wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 8.6rem;
+    @include djm(flex, center, 8.6rem);
+}
+
+.titleDescriptionMenu, .rowMenu {
+    @include djm(flex, space-between, 3rem);
 }
 
 #mainTitleMenu {
@@ -330,23 +338,10 @@ footer {
     margin-bottom: 4rem;
 }
 
-.titleDescriptionMenu {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3rem;
-}
-
 .descritptionMenu {
     display: flex;
     flex-direction: column;
 }
-
-.rowMenu {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3rem;
-}
-
 
 /* MENU LA NOTE ENCHANTEE */
 
