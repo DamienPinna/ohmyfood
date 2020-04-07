@@ -1,24 +1,5 @@
 //FONTS
-
-@mixin googleFonts($font) {
-    @import url('https://fonts.googleapis.com/css?family=#{$font}&display=swap');
-}
-
-$fontsList: 'Noto Sans JP',
-            'Devonshire',
-            'Baloo Thambi 2',
-            'Lobster Two',
-            'Source Serif Pro',
-            'Dancing Script',
-            'Caveat',
-            'Kaushan Script',
-            'Kalam',
-            'Kurale',
-            'Crimson Text';
-
-@each $font in $fontsList {
-    @include googleFonts($font);
-}
+@import 'fonts.scss';
 
 //LISTS
 
@@ -972,6 +953,7 @@ footer {
     0% {transform: translateX(0.5rem);}
     25% {transform: translateX(-0.5rem);}
     50% {transform: translateX(0rem);}
+    100% {transform: translateX(0rem);}
 }
 
 // SOULIGNEMENT DES TITRES
@@ -1023,4 +1005,11 @@ h4 {
 @keyframes bounce {
     from {transform: translateY(0);}
     to {transform: translateY(-1.8rem);}
+}
+
+@media screen and (max-width: 460px) {
+    @keyframes bounce {
+        from {transform: translateY(0);}
+        to {transform: translateY(-1rem);}
+    }
 }

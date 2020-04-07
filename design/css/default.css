@@ -1,3 +1,4 @@
+/* FONTS */
 @import url("https://fonts.googleapis.com/css?family=Noto Sans JP&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Devonshire&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Baloo Thambi 2&display=swap");
@@ -546,6 +547,8 @@ footer {
   25% {
     transform: translateX(-0.5rem); }
   50% {
+    transform: translateX(0rem); }
+  100% {
     transform: translateX(0rem); } }
 h4::after {
   content: '';
@@ -576,5 +579,11 @@ h4:hover::after {
     transform: translateY(0); }
   to {
     transform: translateY(-1.8rem); } }
+@media screen and (max-width: 460px) {
+  @keyframes bounce {
+    from {
+      transform: translateY(0); }
+    to {
+      transform: translateY(-1rem); } } }
 
 /*# sourceMappingURL=default.css.map */

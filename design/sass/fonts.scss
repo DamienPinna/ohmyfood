@@ -1,0 +1,21 @@
+/* FONTS */
+
+@mixin googleFonts($font) {
+    @import url('https://fonts.googleapis.com/css?family=#{$font}&display=swap');
+}
+
+$fontsList: 'Noto Sans JP',
+            'Devonshire',
+            'Baloo Thambi 2',
+            'Lobster Two',
+            'Source Serif Pro',
+            'Dancing Script',
+            'Caveat',
+            'Kaushan Script',
+            'Kalam',
+            'Kurale',
+            'Crimson Text';
+
+@each $font in $fontsList {
+    @include googleFonts($font);
+}
