@@ -326,11 +326,31 @@ footer {
     max-width: 90rem;
     padding : 7rem;
 
+    @include breackpoint(880px) {
+        width: 90%;
+    }
+
+    @include breackpoint(680px) {
+        padding: 7rem 3rem;
+    }
+
     .titleDescriptionMenu {
         img {
             width: 33%;
             height: 1.5rem;
             align-self: center;
+
+            @include breackpoint(940px) {
+                width: 30%;
+            }
+
+            @include breackpoint(760px) {
+                width: 25%;
+            }
+
+            @include breackpoint(680px) {
+                display: none;
+            }
         }
     }
 
@@ -346,6 +366,10 @@ footer {
 
     h4 {
         font-size: 3rem;
+
+        @include breackpoint(680px) {
+            margin: auto;
+        }
     }
 
     p {
@@ -353,8 +377,15 @@ footer {
     }
 
     .rowMenu {
+        @include breackpoint(805px) {
+            flex-direction: column;
+        }
+
         div {
             font-size: 2rem;
+            @include breackpoint(805px) {
+                text-align: center;
+            }
         }
     }
 }
@@ -370,61 +401,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 940px) {
-    #carteMenu01 {
-        .titleDescriptionMenu {
-            img {
-                width: 30%;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 880px) {
-    #carteMenu01 {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 805px) {
-    #carteMenu01 {
-        .rowMenu {
-            flex-direction: column;
-    
-            div {
-                text-align: center;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 760px) {
-    #carteMenu01 {
-        .titleDescriptionMenu {
-            img {
-                width: 25%;
-            } 
-        }
-    }  
-}
-
-@media screen and (max-width: 680px) {
-    #carteMenu01 {
-        padding: 7rem 3rem;
-
-        .titleDescriptionMenu {
-            img {
-                display: none;
-            }
-
-            h4 {
-                margin: auto;;
-            }
-        }
-    }
-}
-
-
 /* MENU LE CHIC A LA FRANCAISE */
 
 #carteMenu02 {
@@ -435,24 +411,56 @@ footer {
     max-width: 90rem;
     padding : 12rem 2rem 14rem 2rem;
 
+    @include breackpoint(830px) {
+        width: 90%;
+    }
+
     .titleDescriptionMenu {
         img {
             width: 33%;
             height: 1.5rem;
             align-self: center;
+
+            @include breackpoint(945px) {
+                width: 30%;
+            }
+
+            @include breackpoint(745px) {
+                width: 25%;
+            }
+
+            @include breackpoint(715px) {
+                display: none;
+            }
         }
     }
 
     .descritptionMenu {
         margin: 0 8rem 6rem 8rem;
+
+        @include breackpoint(805px) {
+            margin: 0 1rem 6rem 1rem;
+        }
     }
 
     #appetizer {
         color: #C67412;
+
+        .descritptionMenu {
+            @include breackpoint(715px) {
+                border-bottom: 0.1rem dashed #C67412;
+            }
+        }
     }
 
     #mainMeal {
         color: #A56799;
+
+        .descritptionMenu {
+            @include breackpoint(715px) {
+                border-bottom: 0.1rem dashed #A56799;
+            }
+        }
     }
 
     #dessert {
@@ -470,6 +478,10 @@ footer {
 
     h4 {
         font-size: 2.5rem;
+
+        @include breackpoint(715px) {
+            margin: auto;
+        }
     }
 
     p {
@@ -477,77 +489,16 @@ footer {
     }
 
     .rowMenu {
+        @include breackpoint(715px) {
+            flex-direction: column;
+            text-align: center;
+        }
+
         div {
             font-size: 2rem;
         }
     }
 }
-
-@media screen and (max-width: 945px) {
-    #carteMenu02 {
-        .titleDescriptionMenu {
-            img {
-                width: 30%;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 830px) {
-    #carteMenu02 {
-        width: 90%;
-    }  
-}
-
-@media screen and (max-width: 805px) {
-    #carteMenu02 {
-        .descritptionMenu {
-            margin: 0 1rem 6rem 1rem;
-        }
-    }
-}
-
-@media screen and (max-width: 745px) {
-    #carteMenu02 {
-        .titleDescriptionMenu {
-            img {
-                width: 25%;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 715px) {
-    #carteMenu02 {
-        .titleDescriptionMenu {
-            img {
-                display: none;
-            }
-
-            h4 {
-                margin: auto;;
-            }
-        }
-
-        .rowMenu {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        #appetizer {
-            .descritptionMenu {
-                border-bottom: 1px dashed #C67412;
-            }
-        }
-
-        #mainMeal {
-            .descritptionMenu {
-                border-bottom: 1px dashed #A56799;
-            }
-        }
-    }
-}
-
 
 /* MENU LE DELICE DES PAPILLES */
 
@@ -559,16 +510,36 @@ footer {
     max-width: 90rem;
     padding : 12rem 2rem 14rem 2rem;
 
+    @include breackpoint(830px) {
+        width: 90%;
+    }
+
     .titleDescriptionMenu {
         img {
             width: 33%;
             height: 1.5rem;
             align-self: center;
+
+            @include breackpoint(945px) {
+                width: 30%;
+            }
+
+            @include breackpoint(745px) {
+                width: 25%;
+            }
+
+            @include breackpoint(715px) {
+                display: none;
+            }
         }
     }
 
     .descritptionMenu {
         margin: 0 8rem 6rem 8rem;
+
+        @include breackpoint(805px) {
+            margin: 0 1rem 6rem 1rem;
+        }
     }
 
     h3 {
@@ -578,17 +549,31 @@ footer {
         background: linear-gradient(45deg, #0228DD 30%, #229DF9 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @include breackpoint(490px) {
+            font-size: 4rem;
+        }
     }
 
     h4 {
         font-size: 2.5rem;
         font-weight: lighter;
+
+        @include breackpoint(715px) {
+            margin: auto;
+        }
     }
 
     #appetizer {
         h4 {
             &::after {
-                border-bottom: solid 0.3rem #0228DD;
+                border-bottom: 0.3rem solid  #0228DD;
+            }
+        }
+
+        .descritptionMenu {
+            @include breackpoint(715px) {
+                border-bottom: 0.1rem dashed #0228DD;
             }
         }
     }
@@ -596,7 +581,13 @@ footer {
     #mainMeal {
         h4 {
             &::after {
-                border-bottom: solid 0.3rem #0670F3;
+                border-bottom: 0.3rem solid #0670F3;
+            }
+        }
+
+        .descritptionMenu {
+            @include breackpoint(715px) {
+                border-bottom: 0.1rem dashed #229DF9;
             }
         }
     }
@@ -604,8 +595,7 @@ footer {
     #desert {
         h4 {
             &::after {
-
-                border-bottom: solid 0.3rem #229DF9;
+                border-bottom: 0.3rem solid #229DF9;
             }
         }
     }
@@ -615,86 +605,17 @@ footer {
     }
 
     .rowMenu {
+        @include breackpoint(715px) {
+            flex-direction: column;
+            text-align: center;
+        }
+
         div {
             font-size: 2rem;
             font-weight: bold;
         }
     }
 }
-
-@media screen and (max-width: 945px) {
-    #carteMenu03 {
-        .titleDescriptionMenu {
-            img {
-                width: 30%;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 830px) {
-    #carteMenu03 {
-        width: 90%;
-    }  
-}
-
-@media screen and (max-width: 805px) {
-    #carteMenu03 {
-        .descritptionMenu {
-            margin: 0 1rem 6rem 1rem;
-        }
-    }
-}
-
-@media screen and (max-width: 745px) {
-    #carteMenu03 {
-        .titleDescriptionMenu {
-            img {
-                width: 25%;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 715px) {
-    #carteMenu03 {
-        .titleDescriptionMenu {
-            img {
-                display: none;
-            }
-
-            h4 {
-                margin: auto;;
-            }
-        }
-
-        .rowMenu {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        #appetizer {
-            .descritptionMenu {
-                border-bottom: 1px dashed #0228DD;
-            }
-        }
-
-        #mainMeal {
-            .descritptionMenu {
-                border-bottom: 1px dashed #229DF9;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 490px) {
-    #carteMenu03 {
-        h3 {
-            font-size: 4rem;
-        }
-    }
-}
-
 
 /* MENU LA PALETTE DU GOUT */
 

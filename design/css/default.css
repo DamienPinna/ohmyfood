@@ -265,10 +265,25 @@ footer {
   width: 85%;
   max-width: 90rem;
   padding: 7rem; }
+  @media screen and (max-width: 880px) {
+    #carteMenu01 {
+      width: 90%; } }
+  @media screen and (max-width: 680px) {
+    #carteMenu01 {
+      padding: 7rem 3rem; } }
   #carteMenu01 .titleDescriptionMenu img {
     width: 33%;
     height: 1.5rem;
     align-self: center; }
+    @media screen and (max-width: 940px) {
+      #carteMenu01 .titleDescriptionMenu img {
+        width: 30%; } }
+    @media screen and (max-width: 760px) {
+      #carteMenu01 .titleDescriptionMenu img {
+        width: 25%; } }
+    @media screen and (max-width: 680px) {
+      #carteMenu01 .titleDescriptionMenu img {
+        display: none; } }
   #carteMenu01 .descritptionMenu {
     margin-bottom: 6rem; }
   #carteMenu01 h3 {
@@ -277,10 +292,19 @@ footer {
     font-weight: lighter; }
   #carteMenu01 h4 {
     font-size: 3rem; }
+    @media screen and (max-width: 680px) {
+      #carteMenu01 h4 {
+        margin: auto; } }
   #carteMenu01 p {
     font-size: 2rem; }
+  @media screen and (max-width: 805px) {
+    #carteMenu01 .rowMenu {
+      flex-direction: column; } }
   #carteMenu01 .rowMenu div {
     font-size: 2rem; }
+    @media screen and (max-width: 805px) {
+      #carteMenu01 .rowMenu div {
+        text-align: center; } }
 
 #footerMenu01 {
   display: flex;
@@ -290,27 +314,6 @@ footer {
     font-size: 3.5rem;
     font-family: 'Devonshire', sans-serif; }
 
-@media screen and (max-width: 940px) {
-  #carteMenu01 .titleDescriptionMenu img {
-    width: 30%; } }
-@media screen and (max-width: 880px) {
-  #carteMenu01 {
-    width: 90%; } }
-@media screen and (max-width: 805px) {
-  #carteMenu01 .rowMenu {
-    flex-direction: column; }
-    #carteMenu01 .rowMenu div {
-      text-align: center; } }
-@media screen and (max-width: 760px) {
-  #carteMenu01 .titleDescriptionMenu img {
-    width: 25%; } }
-@media screen and (max-width: 680px) {
-  #carteMenu01 {
-    padding: 7rem 3rem; }
-    #carteMenu01 .titleDescriptionMenu img {
-      display: none; }
-    #carteMenu01 .titleDescriptionMenu h4 {
-      margin: auto; } }
 /* MENU LE CHIC A LA FRANCAISE */
 #carteMenu02 {
   background-color: #FFF5FE;
@@ -319,16 +322,37 @@ footer {
   width: 85%;
   max-width: 90rem;
   padding: 12rem 2rem 14rem 2rem; }
+  @media screen and (max-width: 830px) {
+    #carteMenu02 {
+      width: 90%; } }
   #carteMenu02 .titleDescriptionMenu img {
     width: 33%;
     height: 1.5rem;
     align-self: center; }
+    @media screen and (max-width: 945px) {
+      #carteMenu02 .titleDescriptionMenu img {
+        width: 30%; } }
+    @media screen and (max-width: 745px) {
+      #carteMenu02 .titleDescriptionMenu img {
+        width: 25%; } }
+    @media screen and (max-width: 715px) {
+      #carteMenu02 .titleDescriptionMenu img {
+        display: none; } }
   #carteMenu02 .descritptionMenu {
     margin: 0 8rem 6rem 8rem; }
+    @media screen and (max-width: 805px) {
+      #carteMenu02 .descritptionMenu {
+        margin: 0 1rem 6rem 1rem; } }
   #carteMenu02 #appetizer {
     color: #C67412; }
+    @media screen and (max-width: 715px) {
+      #carteMenu02 #appetizer .descritptionMenu {
+        border-bottom: 0.1rem dashed #C67412; } }
   #carteMenu02 #mainMeal {
     color: #A56799; }
+    @media screen and (max-width: 715px) {
+      #carteMenu02 #mainMeal .descritptionMenu {
+        border-bottom: 0.1rem dashed #A56799; } }
   #carteMenu02 #dessert {
     color: #6E4CCC; }
   #carteMenu02 h3 {
@@ -340,35 +364,18 @@ footer {
     -webkit-text-fill-color: transparent; }
   #carteMenu02 h4 {
     font-size: 2.5rem; }
+    @media screen and (max-width: 715px) {
+      #carteMenu02 h4 {
+        margin: auto; } }
   #carteMenu02 p {
     font-size: 2rem; }
+  @media screen and (max-width: 715px) {
+    #carteMenu02 .rowMenu {
+      flex-direction: column;
+      text-align: center; } }
   #carteMenu02 .rowMenu div {
     font-size: 2rem; }
 
-@media screen and (max-width: 945px) {
-  #carteMenu02 .titleDescriptionMenu img {
-    width: 30%; } }
-@media screen and (max-width: 830px) {
-  #carteMenu02 {
-    width: 90%; } }
-@media screen and (max-width: 805px) {
-  #carteMenu02 .descritptionMenu {
-    margin: 0 1rem 6rem 1rem; } }
-@media screen and (max-width: 745px) {
-  #carteMenu02 .titleDescriptionMenu img {
-    width: 25%; } }
-@media screen and (max-width: 715px) {
-  #carteMenu02 .titleDescriptionMenu img {
-    display: none; }
-  #carteMenu02 .titleDescriptionMenu h4 {
-    margin: auto; }
-  #carteMenu02 .rowMenu {
-    flex-direction: column;
-    text-align: center; }
-  #carteMenu02 #appetizer .descritptionMenu {
-    border-bottom: 1px dashed #C67412; }
-  #carteMenu02 #mainMeal .descritptionMenu {
-    border-bottom: 1px dashed #A56799; } }
 /* MENU LE DELICE DES PAPILLES */
 #carteMenu03 {
   background-color: #F9F9F9;
@@ -377,12 +384,27 @@ footer {
   width: 85%;
   max-width: 90rem;
   padding: 12rem 2rem 14rem 2rem; }
+  @media screen and (max-width: 830px) {
+    #carteMenu03 {
+      width: 90%; } }
   #carteMenu03 .titleDescriptionMenu img {
     width: 33%;
     height: 1.5rem;
     align-self: center; }
+    @media screen and (max-width: 945px) {
+      #carteMenu03 .titleDescriptionMenu img {
+        width: 30%; } }
+    @media screen and (max-width: 745px) {
+      #carteMenu03 .titleDescriptionMenu img {
+        width: 25%; } }
+    @media screen and (max-width: 715px) {
+      #carteMenu03 .titleDescriptionMenu img {
+        display: none; } }
   #carteMenu03 .descritptionMenu {
     margin: 0 8rem 6rem 8rem; }
+    @media screen and (max-width: 805px) {
+      #carteMenu03 .descritptionMenu {
+        margin: 0 1rem 6rem 1rem; } }
   #carteMenu03 h3 {
     font-size: 5rem;
     font-family: 'Dancing Script', sans-serif;
@@ -390,48 +412,37 @@ footer {
     background: linear-gradient(45deg, #0228DD 30%, #229DF9 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+    @media screen and (max-width: 490px) {
+      #carteMenu03 h3 {
+        font-size: 4rem; } }
   #carteMenu03 h4 {
     font-size: 2.5rem;
     font-weight: lighter; }
+    @media screen and (max-width: 715px) {
+      #carteMenu03 h4 {
+        margin: auto; } }
   #carteMenu03 #appetizer h4::after {
-    border-bottom: solid 0.3rem #0228DD; }
+    border-bottom: 0.3rem solid  #0228DD; }
+  @media screen and (max-width: 715px) {
+    #carteMenu03 #appetizer .descritptionMenu {
+      border-bottom: 0.1rem dashed #0228DD; } }
   #carteMenu03 #mainMeal h4::after {
-    border-bottom: solid 0.3rem #0670F3; }
+    border-bottom: 0.3rem solid #0670F3; }
+  @media screen and (max-width: 715px) {
+    #carteMenu03 #mainMeal .descritptionMenu {
+      border-bottom: 0.1rem dashed #229DF9; } }
   #carteMenu03 #desert h4::after {
-    border-bottom: solid 0.3rem #229DF9; }
+    border-bottom: 0.3rem solid #229DF9; }
   #carteMenu03 p {
     font-size: 2rem; }
+  @media screen and (max-width: 715px) {
+    #carteMenu03 .rowMenu {
+      flex-direction: column;
+      text-align: center; } }
   #carteMenu03 .rowMenu div {
     font-size: 2rem;
     font-weight: bold; }
 
-@media screen and (max-width: 945px) {
-  #carteMenu03 .titleDescriptionMenu img {
-    width: 30%; } }
-@media screen and (max-width: 830px) {
-  #carteMenu03 {
-    width: 90%; } }
-@media screen and (max-width: 805px) {
-  #carteMenu03 .descritptionMenu {
-    margin: 0 1rem 6rem 1rem; } }
-@media screen and (max-width: 745px) {
-  #carteMenu03 .titleDescriptionMenu img {
-    width: 25%; } }
-@media screen and (max-width: 715px) {
-  #carteMenu03 .titleDescriptionMenu img {
-    display: none; }
-  #carteMenu03 .titleDescriptionMenu h4 {
-    margin: auto; }
-  #carteMenu03 .rowMenu {
-    flex-direction: column;
-    text-align: center; }
-  #carteMenu03 #appetizer .descritptionMenu {
-    border-bottom: 1px dashed #0228DD; }
-  #carteMenu03 #mainMeal .descritptionMenu {
-    border-bottom: 1px dashed #229DF9; } }
-@media screen and (max-width: 490px) {
-  #carteMenu03 h3 {
-    font-size: 4rem; } }
 /* MENU LA PALETTE DU GOUT */
 #carteMenu04 {
   background-color: #F9F9F9;
