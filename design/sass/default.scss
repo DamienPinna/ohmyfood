@@ -94,6 +94,10 @@ footer {
         @include breackpoint(460px) {
             font-size: 1.8rem;
         }
+
+        @include breackpoint(350px) {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -120,6 +124,14 @@ footer {
         margin: 5rem 1rem;
     }
 
+    @include breackpoint(350px) {
+        grid-template-columns: 25rem;
+        grid-template-rows: 35rem;
+        grid-auto-rows: 35rem;
+        grid-gap: 2.5rem;
+        margin: 2.5rem 0;
+    }
+
     a {
         display: flex;
         justify-content: center;
@@ -131,27 +143,42 @@ footer {
         }
 }
 
-@media screen and (max-width: 350px) {
-    #selectionMenus {
-        grid-template-columns: 25rem;
-        grid-template-rows: 35rem;
-        grid-auto-rows: 35rem;
-        grid-gap: 2.5rem;
-        margin: 2.5rem 0;
-    }
+//COVER PAGE
 
-    footer {
-        a {
-            font-size: 1.5rem;
-        }
-    }
-}
-
-#menuCoverPage01 {
-    background-color: map-get($bgColorMenus, menu01);
+@mixin menuCoverPage($menu) {
+    background-color: map-get($bgColorMenus, $menu);
     box-shadow: $boxShadow;
     transition-property: opacity;
     transition-duration: 500ms;
+}
+
+@mixin menuCoverPage_h2($font, $font-size) {
+    font-family: $font, sans-serif;
+    margin-bottom: 1.5rem;
+    font-weight: lighter;
+    font-size: $font-size;
+    transition-property: font-size;
+    transition-duration: 500ms;
+}
+
+@mixin menuCoverPage_h2_color($colorStart, $colorEnd) {
+    background: linear-gradient(to bottom right, $colorStart, $colorEnd);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+@mixin menuCoverPage_div($font, $font-size, $color) {
+    font-family: $font, sans-serif;
+    font-size: $font-size;   
+    color: $color;
+    transition-property: font-size;
+    transition-duration: 500ms;
+}
+
+#menuCoverPage01 {
+    @include menuCoverPage('menu01');
 
     img {
         transform: scale(1);
@@ -160,112 +187,69 @@ footer {
     }
 
     h2 {
-        font-family: 'Devonshire', sans-serif;
+        @include menuCoverPage_h2('Devonshire', 2.6rem);
         margin-top: 0;
-        margin-bottom: 1.5rem;
-        font-weight: lighter;
-        font-size: 2.6rem;
         color: #3C1218;
-        transition-property: font-size;
-        transition-duration: 500ms;
     }
 
     div div {
-        font-family: 'Baloo Thambi 2', sans-serif;
-        font-size: 3.5rem;
+        @include menuCoverPage_div('Baloo Thambi 2', 3.5rem, #3C1218);
         font-weight: bold;
-        color: #3C1218;
-        transition-property: font-size;
-        transition-duration: 500ms;
     }
 }
 
 #menuCoverPage02 {
-    background-color: map-get($bgColorMenus, menu02);
-    box-shadow: $boxShadow;
-    transition-property: opacity;
-    transition-duration: 500ms;
+    @include menuCoverPage('menu02');
 
     h2 {
-        font-family: 'Lobster Two', sans-serif;
-        margin-bottom: 1.5rem;
-        font-weight: lighter;
-        font-size: 2.6rem;
-        background: linear-gradient(to bottom right, #C77412, #905BFD);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition-property: font-size;
-        transition-duration: 500ms;
+        @include menuCoverPage_h2('Lobster Two', 2.6rem);
+        @include menuCoverPage_h2_color(#C77412, #905BFD);
     }
 
     div div {
-        font-family: 'Source Serif Pro', sans-serif;
-        font-size: 3.5rem;
+        @include menuCoverPage_div('Source Serif Pro', 3.5rem, #C77412);
         font-weight: bold;
-        color: #C77412;
-        transition-property: font-size;
-        transition-duration: 500ms;
     }
 }
 
 #menuCoverPage03 {
-    background-color: map-get($bgColorMenus, menu03);
-    box-shadow: $boxShadow;
-    transition-property: opacity;
-    transition-duration: 500ms;
+    @include menuCoverPage('menu03');
 
     h2 {
-        font-family: 'Dancing Script', sans-serif;
-        margin-bottom: 1.5rem;
-        font-weight: lighter;
-        font-size: 3rem;
-        background: linear-gradient(to bottom right, #0228DD, #229DF9);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition-property: font-size;
-        transition-duration: 500ms;
+        @include menuCoverPage_h2('Dancing Script', 3rem);
+        @include menuCoverPage_h2_color(#0228DD, #229DF9);
     }
 
     div div {
-        font-family: 'Caveat', sans-serif;
-        font-size: 4rem;
-        color: #0887FB;
-        transition-property: font-size;
-        transition-duration: 500ms;
+        @include menuCoverPage_div('Caveat', 4rem, #0887FB);
     }
 }
 
 #menuCoverPage04 {
-    background-color: map-get($bgColorMenus, menu04);
-    box-shadow: $boxShadow;
-    transition-property: opacity;
-    transition-duration: 500ms;
+    @include menuCoverPage('menu04');
 
     h2 {
-        font-family: 'Kaushan Script', sans-serif;
-        margin-bottom: 1.5rem;
-        font-weight: lighter;
-        font-size: 2.6rem;
-        background: linear-gradient(to bottom right, #42973C, #BFFF7E);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-        transition-property: font-size;
-        transition-duration: 500ms;
+        @include menuCoverPage_h2('Kaushan Script', 2.6rem);
+        @include menuCoverPage_h2_color(#42973C, #BFFF7E);
     }
 
     div div {
-        font-family: 'Caveat', sans-serif;
-        font-size: 4rem;
-        color: #72BF56;
-        transition-property: font-size;
-        transition-duration: 500ms;
+        @include menuCoverPage_div('Caveat', 4rem, #72BF56);
     }
 }
 
+//PARTIE AVEC LE BOUTON PROCHAINEMENT
+
 #partSoon {
     height: 11rem;
+
+    @include breackpoint(460px) {
+        height: 9.5rem;
+    }
+
+    @include breackpoint(350px) {
+        height: 7rem;
+    }
 
     #btnSoon {
     display: flex;
@@ -278,9 +262,18 @@ footer {
     height: 5rem;
     margin: auto;
 
+    @include breackpoint(460px) {
+        width: 19rem;
+        height: 3.8rem;
+    }
+
         #soon {
             font-size: 2.5rem;
             font-family: 'Noto Sans JP', sans-serif;
+
+            @include breackpoint(460px) {
+                font-size: 2rem;
+            }
         }
 
         #dots {
@@ -288,36 +281,14 @@ footer {
         
             .dot {
                 font-size: 8rem;
+
+                @include breackpoint(460px) {
+                    font-size: 6rem !important;
+                }
             }
         }
     }
 }
-
-@media screen and (max-width: 460px) {
-    #partSoon {
-        height: 9.5rem;
-    
-        #btnSoon {
-        width: 19rem;
-        height: 3.8rem;
-
-            #soon {
-                font-size: 2rem;
-            }
-
-            .dot {
-                font-size: 6rem !important;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 350px) {
-    #partSoon {
-        height: 7rem;
-    }
-}
-
 
 /* COMMUN A TOUS LES MENUS */
 

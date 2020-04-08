@@ -67,6 +67,9 @@ footer {
     @media screen and (max-width: 460px) {
       footer a {
         font-size: 1.8rem; } }
+    @media screen and (max-width: 350px) {
+      footer a {
+        font-size: 1.5rem; } }
 
 /* PAGE DE SELECTION DES MENUS */
 #gridCSS {
@@ -86,6 +89,13 @@ footer {
   @media screen and (max-width: 460px) {
     #selectionMenus {
       margin: 5rem 1rem; } }
+  @media screen and (max-width: 350px) {
+    #selectionMenus {
+      grid-template-columns: 25rem;
+      grid-template-rows: 35rem;
+      grid-auto-rows: 35rem;
+      grid-gap: 2.5rem;
+      margin: 2.5rem 0; } }
   #selectionMenus a {
     display: flex;
     justify-content: center;
@@ -93,16 +103,6 @@ footer {
   #selectionMenus div {
     text-align: center; }
 
-@media screen and (max-width: 350px) {
-  #selectionMenus {
-    grid-template-columns: 25rem;
-    grid-template-rows: 35rem;
-    grid-auto-rows: 35rem;
-    grid-gap: 2.5rem;
-    margin: 2.5rem 0; }
-
-  footer a {
-    font-size: 1.5rem; } }
 #menuCoverPage01 {
   background-color: #FCDFDB;
   box-shadow: 0.05rem 0.05rem 1rem #d6d6d6;
@@ -113,21 +113,21 @@ footer {
     transition-property: transform;
     transition-duration: 500ms; }
   #menuCoverPage01 h2 {
-    font-family: 'Devonshire', sans-serif;
-    margin-top: 0;
+    font-family: "Devonshire", sans-serif;
     margin-bottom: 1.5rem;
     font-weight: lighter;
     font-size: 2.6rem;
-    color: #3C1218;
     transition-property: font-size;
-    transition-duration: 500ms; }
+    transition-duration: 500ms;
+    margin-top: 0;
+    color: #3C1218; }
   #menuCoverPage01 div div {
-    font-family: 'Baloo Thambi 2', sans-serif;
+    font-family: "Baloo Thambi 2", sans-serif;
     font-size: 3.5rem;
-    font-weight: bold;
     color: #3C1218;
     transition-property: font-size;
-    transition-duration: 500ms; }
+    transition-duration: 500ms;
+    font-weight: bold; }
 
 #menuCoverPage02 {
   background-color: #FFF5FE;
@@ -135,22 +135,24 @@ footer {
   transition-property: opacity;
   transition-duration: 500ms; }
   #menuCoverPage02 h2 {
-    font-family: 'Lobster Two', sans-serif;
+    font-family: "Lobster Two", sans-serif;
     margin-bottom: 1.5rem;
     font-weight: lighter;
     font-size: 2.6rem;
+    transition-property: font-size;
+    transition-duration: 500ms;
     background: linear-gradient(to bottom right, #C77412, #905BFD);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition-property: font-size;
-    transition-duration: 500ms; }
+    -moz-text-fill-color: transparent; }
   #menuCoverPage02 div div {
-    font-family: 'Source Serif Pro', sans-serif;
+    font-family: "Source Serif Pro", sans-serif;
     font-size: 3.5rem;
-    font-weight: bold;
     color: #C77412;
     transition-property: font-size;
-    transition-duration: 500ms; }
+    transition-duration: 500ms;
+    font-weight: bold; }
 
 #menuCoverPage03 {
   background-color: #F9F9F9;
@@ -158,17 +160,19 @@ footer {
   transition-property: opacity;
   transition-duration: 500ms; }
   #menuCoverPage03 h2 {
-    font-family: 'Dancing Script', sans-serif;
+    font-family: "Dancing Script", sans-serif;
     margin-bottom: 1.5rem;
     font-weight: lighter;
     font-size: 3rem;
+    transition-property: font-size;
+    transition-duration: 500ms;
     background: linear-gradient(to bottom right, #0228DD, #229DF9);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition-property: font-size;
-    transition-duration: 500ms; }
+    -moz-text-fill-color: transparent; }
   #menuCoverPage03 div div {
-    font-family: 'Caveat', sans-serif;
+    font-family: "Caveat", sans-serif;
     font-size: 4rem;
     color: #0887FB;
     transition-property: font-size;
@@ -180,19 +184,19 @@ footer {
   transition-property: opacity;
   transition-duration: 500ms; }
   #menuCoverPage04 h2 {
-    font-family: 'Kaushan Script', sans-serif;
+    font-family: "Kaushan Script", sans-serif;
     margin-bottom: 1.5rem;
     font-weight: lighter;
     font-size: 2.6rem;
+    transition-property: font-size;
+    transition-duration: 500ms;
     background: linear-gradient(to bottom right, #42973C, #BFFF7E);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    transition-property: font-size;
-    transition-duration: 500ms; }
+    -moz-text-fill-color: transparent; }
   #menuCoverPage04 div div {
-    font-family: 'Caveat', sans-serif;
+    font-family: "Caveat", sans-serif;
     font-size: 4rem;
     color: #72BF56;
     transition-property: font-size;
@@ -200,6 +204,12 @@ footer {
 
 #partSoon {
   height: 11rem; }
+  @media screen and (max-width: 460px) {
+    #partSoon {
+      height: 9.5rem; } }
+  @media screen and (max-width: 350px) {
+    #partSoon {
+      height: 7rem; } }
   #partSoon #btnSoon {
     display: flex;
     justify-content: center;
@@ -210,27 +220,24 @@ footer {
     width: 25rem;
     height: 5rem;
     margin: auto; }
+    @media screen and (max-width: 460px) {
+      #partSoon #btnSoon {
+        width: 19rem;
+        height: 3.8rem; } }
     #partSoon #btnSoon #soon {
       font-size: 2.5rem;
       font-family: 'Noto Sans JP', sans-serif; }
+      @media screen and (max-width: 460px) {
+        #partSoon #btnSoon #soon {
+          font-size: 2rem; } }
     #partSoon #btnSoon #dots {
       display: none; }
       #partSoon #btnSoon #dots .dot {
         font-size: 8rem; }
+        @media screen and (max-width: 460px) {
+          #partSoon #btnSoon #dots .dot {
+            font-size: 6rem !important; } }
 
-@media screen and (max-width: 460px) {
-  #partSoon {
-    height: 9.5rem; }
-    #partSoon #btnSoon {
-      width: 19rem;
-      height: 3.8rem; }
-      #partSoon #btnSoon #soon {
-        font-size: 2rem; }
-      #partSoon #btnSoon .dot {
-        font-size: 6rem !important; } }
-@media screen and (max-width: 350px) {
-  #partSoon {
-    height: 7rem; } }
 /* COMMUN A TOUS LES MENUS */
 #wrapper {
   display: flex;
