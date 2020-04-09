@@ -357,7 +357,7 @@ footer {
     color: #6E4CCC; }
   #carteMenu02 h3 {
     font-size: 3.5rem;
-    font-family: 'Kurale', sans-serif;
+    font-family: "Kurale", sans-serif;
     background: linear-gradient(45deg, #C77412 30%, #905BFD 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -403,12 +403,11 @@ footer {
         margin: 0 1rem 6rem 1rem; } }
   #carteMenu03 h3 {
     font-size: 5rem;
-    font-family: 'Dancing Script', sans-serif;
+    font-family: "Dancing Script", sans-serif;
     background: linear-gradient(45deg, #0228DD 30%, #229DF9 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 9rem;
-    font-weight: lighter; }
+    margin-bottom: 9rem; }
     @media screen and (max-width: 490px) {
       #carteMenu03 h3 {
         font-size: 4rem; } }
@@ -427,7 +426,7 @@ footer {
     border-bottom: 0.3rem solid #0670F3; }
   @media screen and (max-width: 715px) {
     #carteMenu03 #mainMeal .descritptionMenu {
-      border-bottom: 0.1rem dashed #229DF9; } }
+      border-bottom: 0.1rem dashed #0670F3; } }
   #carteMenu03 #desert h4::after {
     border-bottom: 0.3rem solid #229DF9; }
   #carteMenu03 p {
@@ -473,7 +472,7 @@ footer {
       border-bottom: 1px dashed #BFFF7E; } }
   #carteMenu04 h3 {
     font-size: 6rem;
-    font-family: 'Kaushan Script', sans-serif;
+    font-family: "Kaushan Script", sans-serif;
     background: linear-gradient(45deg, #42973C 30%, #BFFF7E 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

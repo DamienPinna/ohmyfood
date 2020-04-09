@@ -321,7 +321,7 @@ footer {
 }
 
 
-//MIXINS ET BLOCS DES DIFFERENTS MENUS
+//MIXINS, BLOCS ET VARIABLES DES DIFFERENTS MENUS
 
 @mixin formatCarteMenu ($bgc_menu, $font, $padding) {
     background-color: map-get($bgColorMenus, $bgc_menu);
@@ -332,10 +332,10 @@ footer {
     max-width: 90rem;
 }
 
-@mixin formatH3Menu($font-size, $font-family, $bg){
-    font-size: 6rem;
-    font-family: 'Kaushan Script', sans-serif;
-    background: linear-gradient(45deg, #42973C 30%, #BFFF7E 70%);
+@mixin formatH3Menu($font-size, $font, $colorStart, $colorEnd){
+    font-size: $font-size;
+    font-family: $font, sans-serif;
+    background: linear-gradient(45deg, $colorStart 30%, $colorEnd 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 9rem;
@@ -346,6 +346,9 @@ footer {
     height: 1.5rem;
     align-self: center;
 }
+
+$font-size_p_carteMenu: 2rem;
+$font-size_div_rowMenu: 2rem;
 
 /* MENU LA NOTE ENCHANTEE */
 
@@ -397,7 +400,7 @@ footer {
     }
 
     p {
-        font-size: 2rem;
+        font-size: $font-size_p_carteMenu;
     }
 
     .rowMenu {
@@ -406,7 +409,7 @@ footer {
         }
 
         div {
-            font-size: 2rem;
+            font-size: $font-size_div_rowMenu;
 
             @include breackpoint(805px) {
                 text-align: center;
@@ -486,12 +489,7 @@ footer {
     }
 
     h3 {
-        font-size: 3.5rem;
-        font-family: 'Kurale', sans-serif;
-        background: linear-gradient(45deg, #C77412 30%, #905BFD 70%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 9rem;
+        @include formatH3Menu(3.5rem, 'Kurale', #C77412, #905BFD);
     }
 
     h4 {
@@ -503,7 +501,7 @@ footer {
     }
 
     p {
-        font-size: 2rem;
+        font-size: $font-size_p_carteMenu;
     }
 
     .rowMenu {
@@ -513,7 +511,7 @@ footer {
         }
 
         div {
-            font-size: 2rem;
+            font-size: $font-size_div_rowMenu;
         }
     }
 }
@@ -554,13 +552,7 @@ footer {
     }
 
     h3 {
-        font-size: 5rem;
-        font-family: 'Dancing Script', sans-serif;
-        background: linear-gradient(45deg, #0228DD 30%, #229DF9 70%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 9rem;
-        font-weight: lighter;
+        @include formatH3Menu(5rem, 'Dancing Script', #0228DD, #229DF9);
 
         @include breackpoint(490px) {
             font-size: 4rem;
@@ -599,7 +591,7 @@ footer {
 
         .descritptionMenu {
             @include breackpoint(715px) {
-                border-bottom: 0.1rem dashed #229DF9;
+                border-bottom: 0.1rem dashed #0670F3;
             }
         }
     }
@@ -613,7 +605,7 @@ footer {
     }
 
     p {
-        font-size: 2rem;
+        font-size: $font-size_p_carteMenu;
     }
 
     .rowMenu {
@@ -623,7 +615,7 @@ footer {
         }
 
         div {
-            font-size: 2rem;
+            font-size: $font-size_div_rowMenu;
             font-weight: bold;
         }
     }
@@ -681,12 +673,7 @@ footer {
     }
 
     h3 {
-        font-size: 6rem;
-        font-family: 'Kaushan Script', sans-serif;
-        background: linear-gradient(45deg, #42973C 30%, #BFFF7E 70%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 9rem;
+        @include formatH3Menu(6rem, 'Kaushan Script', #42973C, #BFFF7E);
         font-weight: lighter;
 
         @include breackpoint(490px) {
@@ -708,7 +695,7 @@ footer {
     }
 
     p {
-        font-size: 2rem;
+        font-size: $font-size_p_carteMenu;
     }
 
     .rowMenu {
@@ -718,7 +705,7 @@ footer {
         }
 
         div {
-            font-size: 2rem;
+            font-size: $font-size_div_rowMenu;
             font-weight: bold;
         }
     }
