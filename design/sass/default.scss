@@ -320,15 +320,37 @@ footer {
     flex-direction: column;
 }
 
+
+//MIXINS ET BLOCS DES DIFFERENTS MENUS
+
+@mixin formatCarteMenu ($bgc_menu, $font, $padding) {
+    background-color: map-get($bgColorMenus, $bgc_menu);
+    font-family: $font, sans-serif;
+    padding : $padding;
+    box-shadow: $boxShadow;
+    width: 85%;
+    max-width: 90rem;
+}
+
+@mixin formatH3Menu($font-size, $font-family, $bg){
+    font-size: 6rem;
+    font-family: 'Kaushan Script', sans-serif;
+    background: linear-gradient(45deg, #42973C 30%, #BFFF7E 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 9rem;
+}
+
+%decoration_img {
+    width: 33%;
+    height: 1.5rem;
+    align-self: center;
+}
+
 /* MENU LA NOTE ENCHANTEE */
 
 #carteMenu01 {
-    background-color: map-get($bgColorMenus, menu01);
-    box-shadow: $boxShadow;
-    font-family: 'Kalam', sans-serif;
-    width: 85%;
-    max-width: 90rem;
-    padding : 7rem;
+    @include formatCarteMenu('menu01', 'Kalam', 7rem );
 
     @include breackpoint(880px) {
         width: 90%;
@@ -340,9 +362,7 @@ footer {
 
     .titleDescriptionMenu {
         img {
-            width: 33%;
-            height: 1.5rem;
-            align-self: center;
+            @extend %decoration_img;
 
             @include breackpoint(940px) {
                 width: 30%;
@@ -387,6 +407,7 @@ footer {
 
         div {
             font-size: 2rem;
+
             @include breackpoint(805px) {
                 text-align: center;
             }
@@ -408,12 +429,7 @@ footer {
 /* MENU LE CHIC A LA FRANCAISE */
 
 #carteMenu02 {
-    background-color: map-get($bgColorMenus, menu02);
-    box-shadow: $boxShadow;
-    font-family: 'Crimson Text', sans-serif;
-    width: 85%;
-    max-width: 90rem;
-    padding : 12rem 2rem 14rem 2rem;
+    @include formatCarteMenu('menu02', 'Crimson Text', 12rem 2rem 14rem 2rem );
 
     @include breackpoint(830px) {
         width: 90%;
@@ -421,9 +437,7 @@ footer {
 
     .titleDescriptionMenu {
         img {
-            width: 33%;
-            height: 1.5rem;
-            align-self: center;
+            @extend %decoration_img;
 
             @include breackpoint(945px) {
                 width: 30%;
@@ -474,10 +488,10 @@ footer {
     h3 {
         font-size: 3.5rem;
         font-family: 'Kurale', sans-serif;
-        margin-bottom: 9rem;
         background: linear-gradient(45deg, #C77412 30%, #905BFD 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        margin-bottom: 9rem;
     }
 
     h4 {
@@ -507,12 +521,7 @@ footer {
 /* MENU LE DELICE DES PAPILLES */
 
 #carteMenu03 {
-    background-color: map-get($bgColorMenus, menu03);
-    box-shadow: $boxShadow;
-    font-family: 'Caveat', sans-serif;
-    width: 85%;
-    max-width: 90rem;
-    padding : 12rem 2rem 14rem 2rem;
+    @include formatCarteMenu('menu03', 'Caveat', 12rem 2rem 14rem 2rem );
 
     @include breackpoint(830px) {
         width: 90%;
@@ -520,9 +529,7 @@ footer {
 
     .titleDescriptionMenu {
         img {
-            width: 33%;
-            height: 1.5rem;
-            align-self: center;
+            @extend %decoration_img;
 
             @include breackpoint(945px) {
                 width: 30%;
@@ -549,10 +556,11 @@ footer {
     h3 {
         font-size: 5rem;
         font-family: 'Dancing Script', sans-serif;
-        margin-bottom: 9rem;
         background: linear-gradient(45deg, #0228DD 30%, #229DF9 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        margin-bottom: 9rem;
+        font-weight: lighter;
 
         @include breackpoint(490px) {
             font-size: 4rem;
@@ -624,12 +632,7 @@ footer {
 /* MENU LA PALETTE DU GOUT */
 
 #carteMenu04 {
-    background-color: map-get($bgColorMenus, menu03);
-    box-shadow: $boxShadow;
-    font-family: 'Caveat', sans-serif;
-    width: 85%;
-    max-width: 90rem;
-    padding : 12rem 2rem 14rem 2rem;
+    @include formatCarteMenu('menu04', 'Caveat', 12rem 2rem 14rem 2rem );
 
     @include breackpoint(830px) {
         width: 90%;
@@ -637,9 +640,7 @@ footer {
 
     .titleDescriptionMenu {
         img {
-            width: 33%;
-            height: 1.5rem;
-            align-self: center;
+            @extend %decoration_img;
 
             @include breackpoint(945px) {
                 width: 30%;
@@ -682,11 +683,11 @@ footer {
     h3 {
         font-size: 6rem;
         font-family: 'Kaushan Script', sans-serif;
-        font-weight: lighter;
-        margin-bottom: 9rem;
         background: linear-gradient(45deg, #42973C 30%, #BFFF7E 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        margin-bottom: 9rem;
+        font-weight: lighter;
 
         @include breackpoint(490px) {
             font-size: 4rem;
