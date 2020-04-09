@@ -243,6 +243,9 @@ footer {
   display: flex;
   justify-content: center;
   margin-bottom: 8.6rem; }
+  @media screen and (max-width: 680px) {
+    #wrapper {
+      margin-bottom: 4.3rem; } }
 
 .titleDescriptionMenu, .rowMenu {
   display: flex;
@@ -451,12 +454,33 @@ footer {
   width: 85%;
   max-width: 90rem;
   padding: 12rem 2rem 14rem 2rem; }
+  @media screen and (max-width: 830px) {
+    #carteMenu04 {
+      width: 90%; } }
   #carteMenu04 .titleDescriptionMenu img {
     width: 33%;
     height: 1.5rem;
     align-self: center; }
+    @media screen and (max-width: 945px) {
+      #carteMenu04 .titleDescriptionMenu img {
+        width: 30%; } }
+    @media screen and (max-width: 745px) {
+      #carteMenu04 .titleDescriptionMenu img {
+        width: 25%; } }
+    @media screen and (max-width: 715px) {
+      #carteMenu04 .titleDescriptionMenu img {
+        display: none; } }
   #carteMenu04 .descritptionMenu {
     margin: 0 8rem 6rem 8rem; }
+    @media screen and (max-width: 805px) {
+      #carteMenu04 .descritptionMenu {
+        margin: 0 1rem 6rem 1rem; } }
+  @media screen and (max-width: 715px) {
+    #carteMenu04 #appetizer .descritptionMenu {
+      border-bottom: 0.1rem dashed #42973C; } }
+  @media screen and (max-width: 715px) {
+    #carteMenu04 #mainMeal .descritptionMenu {
+      border-bottom: 1px dashed #BFFF7E; } }
   #carteMenu04 h3 {
     font-size: 6rem;
     font-family: 'Kaushan Script', sans-serif;
@@ -465,44 +489,27 @@ footer {
     background: linear-gradient(45deg, #42973C 30%, #BFFF7E 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+    @media screen and (max-width: 490px) {
+      #carteMenu04 h3 {
+        font-size: 4rem; } }
   #carteMenu04 h4 {
     font-size: 2.5rem;
     font-weight: lighter; }
+    @media screen and (max-width: 715px) {
+      #carteMenu04 h4 {
+        margin: auto; } }
     #carteMenu04 h4::after {
       border-bottom: solid 0.3rem #BFFF7E; }
   #carteMenu04 p {
     font-size: 2rem; }
+  @media screen and (max-width: 715px) {
+    #carteMenu04 .rowMenu {
+      flex-direction: column;
+      text-align: center; } }
   #carteMenu04 .rowMenu div {
     font-size: 2rem;
     font-weight: bold; }
 
-@media screen and (max-width: 945px) {
-  #carteMenu04 .titleDescriptionMenu img {
-    width: 30%; } }
-@media screen and (max-width: 830px) {
-  #carteMenu04 {
-    width: 90%; } }
-@media screen and (max-width: 805px) {
-  #carteMenu04 .descritptionMenu {
-    margin: 0 1rem 6rem 1rem; } }
-@media screen and (max-width: 745px) {
-  #carteMenu04 .titleDescriptionMenu img {
-    width: 25%; } }
-@media screen and (max-width: 715px) {
-  #carteMenu04 .titleDescriptionMenu img {
-    display: none; }
-  #carteMenu04 .titleDescriptionMenu h4 {
-    margin: auto; }
-  #carteMenu04 .rowMenu {
-    flex-direction: column;
-    text-align: center; }
-  #carteMenu04 #appetizer .descritptionMenu {
-    border-bottom: 1px dashed #42973C; }
-  #carteMenu04 #mainMeal .descritptionMenu {
-    border-bottom: 1px dashed #BFFF7E; } }
-@media screen and (max-width: 490px) {
-  #carteMenu04 h3 {
-    font-size: 4rem; } }
 /* PAGE MENTIONS LEGALES */
 #legalMentions {
   max-width: 125rem;
@@ -510,19 +517,16 @@ footer {
   padding: 0 2.5rem; }
   #legalMentions h2 {
     margin-bottom: 5rem; }
+    @media screen and (max-width: 300px) {
+      #legalMentions h2 {
+        font-size: 2rem;
+        margin-bottom: 3rem; } }
   #legalMentions p {
     margin-bottom: 2.5rem; }
+    @media screen and (max-width: 300px) {
+      #legalMentions p {
+        text-align: justify; } }
 
-@media screen and (max-width: 300px) {
-  #legalMentions h2 {
-    font-size: 2rem;
-    margin-bottom: 3rem; }
-  #legalMentions p {
-    text-align: justify; } }
-/*MEDIA QUERIES GENERAUX */
-@media screen and (max-width: 680px) {
-  #wrapper {
-    margin-bottom: 4.3rem; } }
 /* ANIMATIONS */
 #menuCoverPage01:hover {
   opacity: 0.8; }
@@ -566,7 +570,7 @@ footer {
 h4::after {
   content: '';
   display: block;
-  border-bottom: solid 0.3rem;
+  border-bottom: 0.3rem solid;
   transform: scaleX(0);
   transform-origin: 0rem;
   transition: transform 1s; }

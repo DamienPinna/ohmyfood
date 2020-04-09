@@ -300,6 +300,10 @@ footer {
 
 #wrapper {
     @include djm(flex, center, 8.6rem);
+
+    @include breackpoint(680px) {
+        margin-bottom: 4.3rem;
+    }
 }
 
 .titleDescriptionMenu, .rowMenu {
@@ -627,16 +631,52 @@ footer {
     max-width: 90rem;
     padding : 12rem 2rem 14rem 2rem;
 
+    @include breackpoint(830px) {
+        width: 90%;
+    }
+
     .titleDescriptionMenu {
         img {
             width: 33%;
             height: 1.5rem;
             align-self: center;
-        }
+
+            @include breackpoint(945px) {
+                width: 30%;
+            }
+    
+            @include breackpoint(745px) {
+                width: 25%;
+            }
+    
+            @include breackpoint(715px) {
+                display: none;
+            }
+        }  
     }
 
     .descritptionMenu {
         margin: 0 8rem 6rem 8rem;
+
+        @include breackpoint(805px) {
+            margin: 0 1rem 6rem 1rem;
+        }
+    }
+
+    #appetizer {
+        .descritptionMenu {
+            @include breackpoint(715px) {
+                border-bottom: 0.1rem dashed #42973C;
+            }
+        }
+    }
+
+    #mainMeal {
+        .descritptionMenu {
+            @include breackpoint(715px) {
+                border-bottom: 1px dashed #BFFF7E;
+            }
+        }
     }
 
     h3 {
@@ -647,11 +687,19 @@ footer {
         background: linear-gradient(45deg, #42973C 30%, #BFFF7E 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @include breackpoint(490px) {
+            font-size: 4rem;
+        }
     }
 
     h4 {
         font-size: 2.5rem;
         font-weight: lighter;
+
+        @include breackpoint(715px) {
+            margin: auto;
+        }
 
         &::after {
             border-bottom: solid 0.3rem #BFFF7E;
@@ -663,82 +711,14 @@ footer {
     }
 
     .rowMenu {
-        div {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-    }
-}
-
-@media screen and (max-width: 945px) {
-    #carteMenu04 {
-        .titleDescriptionMenu {
-            img {
-                width: 30%;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 830px) {
-    #carteMenu04 {
-        width: 90%;
-    }  
-}
-
-@media screen and (max-width: 805px) {
-    #carteMenu04 {
-        .descritptionMenu {
-            margin: 0 1rem 6rem 1rem;
-        }
-    }
-}
-
-@media screen and (max-width: 745px) {
-    #carteMenu04 {
-        .titleDescriptionMenu {
-            img {
-                width: 25%;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 715px) {
-    #carteMenu04 {
-        .titleDescriptionMenu {
-            img {
-                display: none;
-            }
-
-            h4 {
-                margin: auto;;
-            }
-        }
-
-        .rowMenu {
+        @include breackpoint(715px) {
             flex-direction: column;
             text-align: center;
         }
 
-        #appetizer {
-            .descritptionMenu {
-                border-bottom: 1px dashed #42973C;
-            }
-        }
-
-        #mainMeal {
-            .descritptionMenu {
-                border-bottom: 1px dashed #BFFF7E;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 490px) {
-    #carteMenu04 {
-        h3 {
-            font-size: 4rem;
+        div {
+            font-size: 2rem;
+            font-weight: bold;
         }
     }
 }
@@ -752,31 +732,19 @@ footer {
 
     h2 {
         margin-bottom: 5rem;
+
+        @include breackpoint(300px) {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
     }
 
     p {
         margin-bottom: 2.5rem;
-    }
-}
 
-@media screen and (max-width: 300px) {
-    #legalMentions {
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        p {
+        @include breackpoint(300px) {
             text-align: justify;
         }
-    }
-}
-
-/*MEDIA QUERIES GENERAUX */
-
-@media screen and (max-width: 680px) {
-    #wrapper {
-        margin-bottom: 4.3rem;
     }
 }
 
@@ -784,56 +752,36 @@ footer {
 
 // ZOOM + OPACITE
 
-#menuCoverPage01:hover {
+@mixin zoom($font-size_h2, $font-size_div) {
     opacity: 0.8;
 
+    h2 {
+        font-size: $font-size_h2;
+    }
+
+    div {
+        font-size: $font-size_div;
+    }
+}
+
+#menuCoverPage01:hover {
     img {
         transform: scale(1.3);
     }
 
-    h2 {
-        font-size: 3.1rem;
-    }
-
-    div {
-        font-size: 4rem;
-    }
+    @include zoom(3.1rem, 4rem);
 }
 
 #menuCoverPage02:hover {
-    opacity: 0.8;
-
-    h2 {
-        font-size: 3.1rem;
-    }
-
-    div {
-        font-size: 4rem;
-    }
+    @include zoom(3.1rem, 4rem);
 }
 
 #menuCoverPage03:hover {
-    opacity: 0.8;
-
-    h2 {
-        font-size: 3.5rem;
-    }
-
-    div {
-        font-size: 5rem;
-    }
+    @include zoom(3.5rem, 5rem);
 }
 
 #menuCoverPage04:hover {
-    opacity: 0.8;
-
-    h2 {
-        font-size: 3.1rem;
-    }
-
-    div {
-        font-size: 5rem;
-    }
+    @include zoom(3.1rem, 5rem);
 }
 
 // EFFET WIGGLE
@@ -849,12 +797,12 @@ footer {
 
 h4 {
     &::after {
-    content: '';
-    display: block;
-    border-bottom: solid 0.3rem;
-    transform: scaleX(0);
-    transform-origin: 0rem;
-    transition: transform 1s;
+        content: '';
+        display: block;
+        border-bottom: 0.3rem solid ;
+        transform: scaleX(0);
+        transform-origin: 0rem;
+        transition: transform 1s;
     }
 
     &:hover::after {
