@@ -178,7 +178,7 @@ footer {
 }
 
 #menuCoverPage01 {
-    @include menuCoverPage('menu01');
+    @include menuCoverPage('menu01'); //background-color du menu -> voir map bgColorMenus
 
     img {
         transform: scale(1);
@@ -187,54 +187,54 @@ footer {
     }
 
     h2 {
-        @include menuCoverPage_h2('Devonshire', 2.6rem);
+        @include menuCoverPage_h2('Devonshire', 2.6rem); //(font, font-size)
         margin-top: 0;
         color: #3C1218;
     }
 
     div div {
-        @include menuCoverPage_div('Baloo Thambi 2', 3.5rem, #3C1218);
+        @include menuCoverPage_div('Baloo Thambi 2', 3.5rem, #3C1218); //(font, font-size, color)
         font-weight: bold;
     }
 }
 
 #menuCoverPage02 {
-    @include menuCoverPage('menu02');
+    @include menuCoverPage('menu02'); //background-color du menu -> voir map bgColorMenus
 
     h2 {
-        @include menuCoverPage_h2('Lobster Two', 2.6rem);
-        @include menuCoverPage_h2_color(#C77412, #905BFD);
+        @include menuCoverPage_h2('Lobster Two', 2.6rem); //(font, font-size)
+        @include menuCoverPage_h2_color(#C77412, #905BFD); //couleurs du linear-grandient
     }
 
     div div {
-        @include menuCoverPage_div('Source Serif Pro', 3.5rem, #C77412);
+        @include menuCoverPage_div('Source Serif Pro', 3.5rem, #C77412); //(font, font-size, color)
         font-weight: bold;
     }
 }
 
 #menuCoverPage03 {
-    @include menuCoverPage('menu03');
+    @include menuCoverPage('menu03'); //background-color du menu -> voir map bgColorMenus
 
     h2 {
-        @include menuCoverPage_h2('Dancing Script', 3rem);
-        @include menuCoverPage_h2_color(#0228DD, #229DF9);
+        @include menuCoverPage_h2('Dancing Script', 3rem); //(font, font-size)
+        @include menuCoverPage_h2_color(#0228DD, #229DF9); //couleurs du linear-grandient
     }
 
     div div {
-        @include menuCoverPage_div('Caveat', 4rem, #0887FB);
+        @include menuCoverPage_div('Caveat', 4rem, #0887FB); //(font, font-size, color)
     }
 }
 
 #menuCoverPage04 {
-    @include menuCoverPage('menu04');
+    @include menuCoverPage('menu04'); //background-color du menu -> voir map bgColorMenus
 
     h2 {
-        @include menuCoverPage_h2('Kaushan Script', 2.6rem);
-        @include menuCoverPage_h2_color(#42973C, #BFFF7E);
+        @include menuCoverPage_h2('Kaushan Script', 2.6rem); //(font, font-size)
+        @include menuCoverPage_h2_color(#42973C, #BFFF7E); //couleurs du linear-grandient
     }
 
     div div {
-        @include menuCoverPage_div('Caveat', 4rem, #72BF56);
+        @include menuCoverPage_div('Caveat', 4rem, #72BF56); //(font, font-size, color)
     }
 }
 
@@ -299,7 +299,7 @@ footer {
 }
 
 #wrapper {
-    @include djm(flex, center, 8.6rem);
+    @include djm(flex, center, 8.6rem); //(display, justify-content, margin-bottom)
 
     @include breackpoint(680px) {
         margin-bottom: 4.3rem;
@@ -307,7 +307,7 @@ footer {
 }
 
 .titleDescriptionMenu, .rowMenu {
-    @include djm(flex, space-between, 3rem);
+    @include djm(flex, space-between, 3rem); //(display, justify-content, margin-bottom)
 }
 
 #mainTitleMenu {
@@ -353,7 +353,7 @@ $font-size_div_rowMenu: 2rem;
 /* MENU LA NOTE ENCHANTEE */
 
 #carteMenu01 {
-    @include formatCarteMenu('menu01', 'Kalam', 7rem );
+    @include formatCarteMenu('menu01', 'Kalam', 7rem ); //(key de la map bgColor Menu, font, padding)
 
     @include breackpoint(880px) {
         width: 90%;
@@ -432,7 +432,7 @@ $font-size_div_rowMenu: 2rem;
 /* MENU LE CHIC A LA FRANCAISE */
 
 #carteMenu02 {
-    @include formatCarteMenu('menu02', 'Crimson Text', 12rem 2rem 14rem 2rem );
+    @include formatCarteMenu('menu02', 'Crimson Text', 12rem 2rem 14rem 2rem ); //(hey de la map bgColor Menu, font, padding)
 
     @include breackpoint(830px) {
         width: 90%;
@@ -489,7 +489,7 @@ $font-size_div_rowMenu: 2rem;
     }
 
     h3 {
-        @include formatH3Menu(3.5rem, 'Kurale', #C77412, #905BFD);
+        @include formatH3Menu(3.5rem, 'Kurale', #C77412, #905BFD); //(font-size, font, couleurs du linear-gradient)
     }
 
     h4 {
@@ -519,7 +519,7 @@ $font-size_div_rowMenu: 2rem;
 /* MENU LE DELICE DES PAPILLES */
 
 #carteMenu03 {
-    @include formatCarteMenu('menu03', 'Caveat', 12rem 2rem 14rem 2rem );
+    @include formatCarteMenu('menu03', 'Caveat', 12rem 2rem 14rem 2rem ); //(hey de la map bgColor Menu, font, padding)
 
     @include breackpoint(830px) {
         width: 90%;
@@ -552,7 +552,7 @@ $font-size_div_rowMenu: 2rem;
     }
 
     h3 {
-        @include formatH3Menu(5rem, 'Dancing Script', #0228DD, #229DF9);
+        @include formatH3Menu(5rem, 'Dancing Script', #0228DD, #229DF9); //(font-size, font, couleurs du linear-gradient)
 
         @include breackpoint(490px) {
             font-size: 4rem;
@@ -624,7 +624,7 @@ $font-size_div_rowMenu: 2rem;
 /* MENU LA PALETTE DU GOUT */
 
 #carteMenu04 {
-    @include formatCarteMenu('menu04', 'Caveat', 12rem 2rem 14rem 2rem );
+    @include formatCarteMenu('menu04', 'Caveat', 12rem 2rem 14rem 2rem ); //(hey de la map bgColor Menu, font, padding)
 
     @include breackpoint(830px) {
         width: 90%;
@@ -673,7 +673,7 @@ $font-size_div_rowMenu: 2rem;
     }
 
     h3 {
-        @include formatH3Menu(6rem, 'Kaushan Script', #42973C, #BFFF7E);
+        @include formatH3Menu(6rem, 'Kaushan Script', #42973C, #BFFF7E); //(font-size, font, couleurs du linear-gradient)
         font-weight: lighter;
 
         @include breackpoint(490px) {
