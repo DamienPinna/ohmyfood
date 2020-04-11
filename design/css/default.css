@@ -10,6 +10,11 @@
 @import url("https://fonts.googleapis.com/css?family=Kalam&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Kurale&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Crimson Text&display=swap");
+#carteMenu01 .titleDescriptionMenu img, #carteMenu02 .titleDescriptionMenu img, #carteMenu03 .titleDescriptionMenu img, #carteMenu04 .titleDescriptionMenu img {
+  width: 33%;
+  height: 1.5rem;
+  align-self: center; }
+
 /* GENERAL */
 *, *::before, *::after {
   margin: 0;
@@ -103,6 +108,7 @@ footer {
   #selectionMenus div {
     text-align: center; }
 
+/* PAGES DE GARDE DES MENUS */
 #menuCoverPage01 {
   background-color: #FCDFDB;
   box-shadow: 0.05rem 0.05rem 1rem #d6d6d6;
@@ -202,6 +208,7 @@ footer {
     transition-property: font-size;
     transition-duration: 500ms; }
 
+/*PARTIE AVEC LE BOUTON PROCHAINEMENT */
 #partSoon {
   height: 11rem; }
   @media screen and (max-width: 460px) {
@@ -259,11 +266,6 @@ footer {
 .descritptionMenu {
   display: flex;
   flex-direction: column; }
-
-#carteMenu01 .titleDescriptionMenu img, #carteMenu02 .titleDescriptionMenu img, #carteMenu03 .titleDescriptionMenu img, #carteMenu04 .titleDescriptionMenu img {
-  width: 33%;
-  height: 1.5rem;
-  align-self: center; }
 
 /* MENU LA NOTE ENCHANTEE */
 #carteMenu01 {

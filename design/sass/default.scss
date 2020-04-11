@@ -1,7 +1,8 @@
-//FONTS
+//IMPORTS//
 @import 'fonts.scss';
+@import 'mixins.scss';
 
-//LISTS
+//LISTS//
 
 //Couleurs de fond des menus
 $bgColorMenus: (menu01: #FCDFDB, 
@@ -9,7 +10,7 @@ $bgColorMenus: (menu01: #FCDFDB,
                 menu03: #F9F9F9, 
                 menu04: #FDFFFD);
 
-//VARIABLES
+//VARIABLES//
 
 //Décorations
 $boxShadow: 0.05rem 0.05rem 1rem #d6d6d6;
@@ -18,12 +19,17 @@ $boxShadow: 0.05rem 0.05rem 1rem #d6d6d6;
 $primaryColor: #579C87;
 $secondaryColor: #FDCB46;
 
-//MIXIN BREACKPOINT
-@mixin breackpoint ($breackpoint) {
-    @media screen and (max-width: $breackpoint) {
-        @content;
-    }
+//Dimensions
+$font-size_p_carteMenu: 2rem;
+$font-size_div_rowMenu: 2rem;
+
+// BLOC D'HERITAGE//
+%decoration_img {
+    width: 33%;
+    height: 1.5rem;
+    align-self: center;
 }
+
 
 /* GENERAL */
 
@@ -143,39 +149,7 @@ footer {
         }
 }
 
-//COVER PAGE
-
-@mixin menuCoverPage($menu) {
-    background-color: map-get($bgColorMenus, $menu);
-    box-shadow: $boxShadow;
-    transition-property: opacity;
-    transition-duration: 500ms;
-}
-
-@mixin menuCoverPage_h2($font, $font-size) {
-    font-family: $font, sans-serif;
-    margin-bottom: 1.5rem;
-    font-weight: lighter;
-    font-size: $font-size;
-    transition-property: font-size;
-    transition-duration: 500ms;
-}
-
-@mixin menuCoverPage_h2_color($colorStart, $colorEnd) {
-    background: linear-gradient(to bottom right, $colorStart, $colorEnd);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-@mixin menuCoverPage_div($font, $font-size, $color) {
-    font-family: $font, sans-serif;
-    font-size: $font-size;   
-    color: $color;
-    transition-property: font-size;
-    transition-duration: 500ms;
-}
+/* PAGES DE GARDE DES MENUS */
 
 #menuCoverPage01 {
     @include menuCoverPage('menu01'); //background-color du menu -> voir map bgColorMenus
@@ -238,7 +212,7 @@ footer {
     }
 }
 
-//PARTIE AVEC LE BOUTON PROCHAINEMENT
+/*PARTIE AVEC LE BOUTON PROCHAINEMENT */
 
 #partSoon {
     height: 11rem;
@@ -292,12 +266,6 @@ footer {
 
 /* COMMUN A TOUS LES MENUS */
 
-@mixin djm ($display, $justify-content, $margin-bottom) {
-    display: $display;
-    justify-content: $justify-content;
-    margin-bottom: $margin-bottom;
-}
-
 #wrapper {
     @include djm(flex, center, 8.6rem); //(display, justify-content, margin-bottom)
 
@@ -319,36 +287,6 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
-
-//MIXINS, BLOCS ET VARIABLES DES DIFFERENTS MENUS
-
-@mixin formatCarteMenu ($bgc_menu, $font, $padding) {
-    background-color: map-get($bgColorMenus, $bgc_menu);
-    font-family: $font, sans-serif;
-    padding : $padding;
-    box-shadow: $boxShadow;
-    width: 85%;
-    max-width: 90rem;
-}
-
-@mixin formatH3Menu($font-size, $font, $colorStart, $colorEnd){
-    font-size: $font-size;
-    font-family: $font, sans-serif;
-    background: linear-gradient(45deg, $colorStart 30%, $colorEnd 70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 9rem;
-}
-
-%decoration_img {
-    width: 33%;
-    height: 1.5rem;
-    align-self: center;
-}
-
-$font-size_p_carteMenu: 2rem;
-$font-size_div_rowMenu: 2rem;
 
 /* MENU LA NOTE ENCHANTEE */
 
@@ -739,18 +677,6 @@ $font-size_div_rowMenu: 2rem;
 /* ANIMATIONS */
 
 // ZOOM + OPACITE
-
-@mixin zoom($font-size_h2, $font-size_div) {
-    opacity: 0.8;
-
-    h2 {
-        font-size: $font-size_h2;
-    }
-
-    div {
-        font-size: $font-size_div;
-    }
-}
 
 #menuCoverPage01:hover {
     img {

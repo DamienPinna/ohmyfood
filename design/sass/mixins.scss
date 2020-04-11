@@ -1,0 +1,84 @@
+//MIXINS//
+
+//MIXIN BREACKPOINT
+@mixin breackpoint ($breackpoint) {
+    @media screen and (max-width: $breackpoint) {
+        @content;
+    }
+}
+
+//COVER PAGE
+
+@mixin menuCoverPage($menu) {
+    background-color: map-get($bgColorMenus, $menu);
+    box-shadow: $boxShadow;
+    transition-property: opacity;
+    transition-duration: 500ms;
+}
+
+@mixin menuCoverPage_h2($font, $font-size) {
+    font-family: $font, sans-serif;
+    margin-bottom: 1.5rem;
+    font-weight: lighter;
+    font-size: $font-size;
+    transition-property: font-size;
+    transition-duration: 500ms;
+}
+
+@mixin menuCoverPage_h2_color($colorStart, $colorEnd) {
+    background: linear-gradient(to bottom right, $colorStart, $colorEnd);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+@mixin menuCoverPage_div($font, $font-size, $color) {
+    font-family: $font, sans-serif;
+    font-size: $font-size;   
+    color: $color;
+    transition-property: font-size;
+    transition-duration: 500ms;
+}
+
+//MIXIN COMMUN A TOUS LES PAGES
+
+@mixin djm ($display, $justify-content, $margin-bottom) {
+    display: $display;
+    justify-content: $justify-content;
+    margin-bottom: $margin-bottom;
+}
+
+//MIXINS DES DIFFERENTS MENUS
+
+@mixin formatCarteMenu ($bgc_menu, $font, $padding) {
+    background-color: map-get($bgColorMenus, $bgc_menu);
+    font-family: $font, sans-serif;
+    padding : $padding;
+    box-shadow: $boxShadow;
+    width: 85%;
+    max-width: 90rem;
+}
+
+@mixin formatH3Menu($font-size, $font, $colorStart, $colorEnd){
+    font-size: $font-size;
+    font-family: $font, sans-serif;
+    background: linear-gradient(45deg, $colorStart 30%, $colorEnd 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 9rem;
+}
+
+//MIXIN POUR L'EFFET ZOOM AU SURVOL
+
+@mixin zoom($font-size_h2, $font-size_div) {
+    opacity: 0.8;
+
+    h2 {
+        font-size: $font-size_h2;
+    }
+
+    div {
+        font-size: $font-size_div;
+    }
+}
