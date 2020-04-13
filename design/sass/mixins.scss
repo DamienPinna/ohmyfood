@@ -28,9 +28,7 @@
 @mixin menuCoverPage_h2_color($colorStart, $colorEnd) {
     background: linear-gradient(to bottom right, $colorStart, $colorEnd);
     -webkit-background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
 
 @mixin menuCoverPage_div($font, $font-size, $color) {
