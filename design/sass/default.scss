@@ -52,14 +52,14 @@ h1 {
     font-size: 4rem;
     color: $secondaryColor;
     margin: auto;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 h2 {
     text-align: center;
     margin: 4rem 0 2rem 0;
     font-size: 3rem;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 a {
@@ -736,19 +736,19 @@ h4 {
             transform: translateY(-1.2rem);
         }
 
-        .dot_01{
-            animation: bounce 350ms infinite alternate; 
+        .dot_01 {
+            animation: bounce 350ms infinite alternate;
+        }
+
+        .dot_02 {
+            animation: bounce 350ms infinite alternate;
+            animation-delay: 116ms;
         } 
 
-        .dot_02{
+        .dot_03 {
             animation: bounce 350ms infinite alternate;
-            animation-delay: 116ms; 
-        } 
-
-        .dot_03{
-            animation: bounce 350ms infinite alternate;
-            animation-delay: 233ms; 
-        } 
+            animation-delay: 233ms;
+        }
     }
 }
 
